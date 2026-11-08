@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 🏷️ High-Impact SEO & Meta Tags -->
+  <title>12-Month Daylight & Fasting Hours Calculator | AdeenDesk</title>
+  <meta name="title" content="12-Month Daylight & Fasting Hours Calculator | AdeenDesk">
+  <meta name="description" content="Calculate monthly daylight hours, night duration, and estimated Islamic fasting (Sawm/Roza) lengths across global latitudes using astronomical solar declination models.">
+  <meta name="keywords" content="daylight calculator, fasting hours calculator, Islamic fasting duration, summer solstice fasting, winter solstice fasting, solar declination, AdeenDesk daylight chart">
+  <meta name="author" content="AdeenDesk">
+  <meta name="application-name" content="AdeenDesk">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yourdomain.com/daylight-chart.html">
+
+  <!-- 📱 PWA & Mobile Web Capabilities -->
+  <meta name="theme-color" content="#064e3b">
+  <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+
+  <!-- 🌐 Multilingual Canonical & Alternate Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="https://yourdomain.com/daylight-chart.html" />
+  <link rel="alternate" hreflang="hi" href="https://yourdomain.com/hi/daylight-chart.html" />
+  <link rel="alternate" hreflang="ur" href="https://yourdomain.com/urdu/daylight-chart.html" />
+  <link rel="alternate" hreflang="x-default" href="https://yourdomain.com/daylight-chart.html" />
+
+  <!-- 📲 Open Graph / Social Sharing Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AdeenDesk">
+  <meta property="og:url" content="https://yourdomain.com/daylight-chart.html">
+  <meta property="og:title" content="12-Month Daylight & Fasting Hours Calculator | AdeenDesk">
+  <meta property="og:description" content="Calculate monthly daylight, night duration, and seasonal Islamic fasting shifts worldwide.">
+  <meta property="og:image" content="https://yourdomain.com/icon-512.png">
+
+  <!-- 🐦 Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="12-Month Daylight & Fasting Hours Calculator | AdeenDesk">
+  <meta name="twitter:description" content="Calculate monthly daylight, night duration, and seasonal Islamic fasting shifts worldwide.">
+  <meta name="twitter:image" content="https://yourdomain.com/icon-512.png">
+
+  <!-- 🔍 Google-Compliant JSON-LD Structured Data with BreadcrumbList & WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://yourdomain.com/daylight-chart.html#webapp",
+        "url": "https://yourdomain.com/daylight-chart.html",
+        "name": "12-Month Daylight & Fasting Hours Calculator",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
+        "description": "Calculates monthly daylight, night durations, and estimated Islamic fasting (Sawm) hours across global latitudes using solar declination.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "AdeenDesk",
+          "url": "https://yourdomain.com/"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://yourdomain.com/daylight-chart.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://yourdomain.com/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Daylight & Fasting Hours",
+            "item": "https://yourdomain.com/daylight-chart.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #064e3b;
+      --primary-dark: #022c22;
+      --gold: #b45309;
+      --day-color: #f59e0b;
+      --night-color: #1e1b4b;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      --text: #0f172a;
+      --muted: #64748b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', system-ui, sans-serif; }
+    body { background: var(--bg); color: var(--text); margin: 0; padding: 14px; font-size: 13.5px; }
+
+    .header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .back-btn {
+      background: #0f172a;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      transition: background 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .back-btn:hover { background: #1e293b; }
+
+    .page-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      margin: 0;
+      color: var(--primary);
+    }
+
+    .card-box {
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 14px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    }
+
+    /* GPS & Location Bar */
+    .location-controls {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      align-items: center;
+    }
+
+    .loc-btn {
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-family: inherit;
+      transition: background 0.15s ease;
+    }
+
+    .loc-btn:hover { background: var(--primary-dark); }
+    .loc-btn:active { transform: scale(0.98); }
+
+    .city-select {
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      font-size: 0.75rem;
+      font-family: inherit;
+      font-weight: 600;
+      background: #ffffff;
+      outline: none;
+    }
+
+    .city-select:focus { border-color: var(--primary); }
+
+    /* Share Button */
+    .share-btn {
+      background: #047857;
+      color: #ffffff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-family: inherit;
+      transition: background 0.15s ease;
+    }
+
+    .share-btn:hover { background: #065f46; }
+    .share-btn:active { transform: scale(0.98); }
+
+    /* Legend */
+    .legend-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    /* Stacked Bars */
+    .bars-container { display: flex; flex-direction: column; gap: 10px; }
+    .month-row {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+    }
+
+    .month-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .stacked-bar {
+      height: 22px;
+      width: 100%;
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      margin-bottom: 6px;
+    }
+
+    .bar-day {
+      background: linear-gradient(90deg, #f59e0b, #fbbf24);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 800;
+      color: #78350f;
+    }
+
+    .bar-night {
+      background: var(--night-color);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 800;
+      color: #93c5fd;
+    }
+
+    .month-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    /* Formal Scientific & Fiqh Note */
+    .notice-card {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 0.74rem;
+      line-height: 1.55;
+      color: #78350f;
+      margin-top: 16px;
+    }
+
+    .notice-card ul { margin: 6px 0 0; padding-left: 18px; }
+    .notice-card li { margin-bottom: 6px; }
+
+    footer {
+      margin-top: 24px;
+      padding: 14px 10px;
+      text-align: center;
+      font-size: 0.7rem;
+      color: #94a3b8;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header-bar">
+    <a href="index.html" class="back-btn">⬅️ Dashboard</a>
+    <h1 class="page-title">12-Month Daylight & Fasting Duration</h1>
+  </header>
+
+  <main style="max-width: 720px; margin: 0 auto;">
+    <section class="card-box">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px;">
+        <strong style="font-size:0.88rem; color:var(--primary);">📍 Location & Calculations</strong>
+        <span id="locLabel" style="font-size:0.75rem; color:var(--primary); font-weight:700;">Central India (Default)</span>
+      </div>
+      <div class="location-controls">
+        <button class="loc-btn" onclick="detectGPSLocation()">📡 Detect My GPS</button>
+        <select class="city-select" id="presetSelect" onchange="changePresetLocation(this.value)" aria-label="Select reference latitude">
+          <option value="23.25">Bhopal / Central India (23.2° N)</option>
+          <option value="28.61">New Delhi (28.6° N)</option>
+          <option value="17.38">Hyderabad / South India (17.4° N)</option>
+          <option value="21.42">Makkah al-Mukarramah (21.4° N)</option>
+          <option value="51.50">London, UK (51.5° N - High Latitude Shift)</option>
+        </select>
+        <button class="share-btn" onclick="shareDaylightData()">📤 Share Chart</button>
+      </div>
+    </section>
+
+    <!-- Legend -->
+    <div class="legend-row">
+      <span style="color:#b45309;">■ Daylight (Sun Visible)</span>
+      <span style="color:#1e1b4b;">■ Night Duration</span>
+    </div>
+
+    <!-- 12-Month Visual Stacked Bar Graph -->
+    <div class="bars-container" id="monthlyBarsList"></div>
+
+    <!-- Scientific & Fiqh Explanatory Note -->
+    <section class="notice-card">
+      <strong style="display:block; font-size:0.8rem; margin-bottom:4px;">⚠️ Scientific and Fiqh Guidelines:</strong>
+      <ul>
+        <li><strong>Geographical Latitude:</strong> Daylight length varies strictly with geographical latitude due to the Earth's axial tilt (23.44°) as it orbits the sun.</li>
+        <li><strong>Daylight vs. Fasting Hours:</strong> Fasting (Sawm) begins at true dawn (Subh Sadiq / Fajr) and concludes at sunset (Maghrib). Because astronomical twilight precedes sunrise, fasting durations are approximately 1 hour and 15 minutes longer than visible sunlight.</li>
+        <li><strong>Seasonal Extremes:</strong> The Summer Solstice (around June 21) exhibits the longest daylight and longest fast in the Northern Hemisphere, while the Winter Solstice (around December 21) yields the shortest.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 <strong>AdeenDesk</strong>. All Rights Reserved. Astronomical and solar ephemeris calculations.
+  </footer>
+
+  <script>
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const solarDeclinations = [-21.1, -12.9, -2.4, 9.4, 18.8, 23.3, 21.5, 13.8, 2.2, -9.6, -18.9, -23.1];
+
+    let currentLat = 23.25;
+    let currentLocationName = "Central India";
+
+    function sanitizeHTML(str) {
+      if (!str) return '';
+      const temp = document.createElement('div');
+      temp.textContent = str;
+      return temp.innerHTML;
+    }
+
+    function calculateDaylight(lat, dec) {
+      const latRad = lat * (Math.PI / 180);
+      const decRad = dec * (Math.PI / 180);
+      let cosH = -Math.tan(latRad) * Math.tan(decRad);
+
+      if (cosH > 1) cosH = 1;
+      if (cosH < -1) cosH = -1;
+
+      const H = Math.acos(cosH) * (180 / Math.PI);
+      return (2 * H) / 15;
+    }
+
+    function renderDynamicBars(lat) {
+      const container = document.getElementById('monthlyBarsList');
+      if (!container) return;
+      container.innerHTML = '';
+
+      monthNames.forEach((m, idx) => {
+        const dayHours = calculateDaylight(lat, solarDeclinations[idx]);
+        const nightHours = 24 - dayHours;
+        const dayPct = ((dayHours / 24) * 100).toFixed(1);
+        const nightPct = (100 - dayPct).toFixed(1);
+
+        const rozaTotalHours = dayHours + 1.25;
+        const rH = Math.floor(rozaTotalHours);
+        const rM = Math.round((rozaTotalHours - rH) * 60);
+
+        const dH = Math.floor(dayHours);
+        const dM = Math.round((dayHours - dH) * 60);
+
+        const row = document.createElement('div');
+        row.className = 'month-row';
+        row.innerHTML = `
+          <div class="month-header">
+            <span>📅 ${m}</span>
+            <span style="font-size:0.72rem; color:#047857; font-weight:700;">☀️ Day: ${dH}h ${dM}m</span>
+          </div>
+          <div class="stacked-bar">
+            <div class="bar-day" style="width:${dayPct}%;">${dayPct}% Day</div>
+            <div class="bar-night" style="width:${nightPct}%;">${nightPct}% Night</div>
+          </div>
+          <div class="month-footer">
+            <span>Night: ${nightHours.toFixed(1)} hrs</span>
+            <strong style="color:var(--gold);">🌙 Fasting: ~${rH}h ${rM}m</strong>
+          </div>
+        `;
+        container.appendChild(row);
+      });
+    }
+
+    function detectGPSLocation() {
+      if (navigator.geolocation) {
+        document.getElementById('locLabel').innerText = "Locating via GPS...";
+        navigator.geolocation.getCurrentPosition(
+          pos => {
+            currentLat = pos.coords.latitude;
+            currentLocationName = `GPS Location (${currentLat.toFixed(2)}° N)`;
+            document.getElementById('locLabel').innerText = currentLocationName;
+            renderDynamicBars(currentLat);
+          },
+          err => {
+            alert("GPS permission was unavailable. Please select your reference city manually.");
+            document.getElementById('locLabel').innerText = "Manual Selection";
+          },
+          { timeout: 8000, enableHighAccuracy: false }
+        );
+      } else {
+        alert("Geolocation is not supported by your browser.");
+      }
+    }
+
+    function changePresetLocation(val) {
+      currentLat = parseFloat(val);
+      const sel = document.getElementById('presetSelect');
+      currentLocationName = sel.options[sel.selectedIndex].text.split('(')[0].trim();
+      document.getElementById('locLabel').innerText = currentLocationName;
+      renderDynamicBars(currentLat);
+    }
+
+    function shareDaylightData() {
+      const juneDay = calculateDaylight(currentLat, solarDeclinations[5]);
+      const decDay = calculateDaylight(currentLat, solarDeclinations[11]);
+
+      const juneRoza = juneDay + 1.25;
+      const decRoza = decDay + 1.25;
+
+      const shareUrl = `${window.location.origin}/daylight-chart.html`;
+
+      const shareMessage = 
+`☀️ *12-Month Daylight & Fasting Duration Chart*
+_AdeenDesk Solar Ephemeris Engine_
+
+📍 *Location:* ${currentLocationName}
+
+📊 *Seasonal Fasting Shift:*
+▪️ *June (Longest Fast):* ~${Math.floor(juneRoza)}h ${Math.round((juneRoza % 1) * 60)}m
+▪️ *December (Shortest Fast):* ~${Math.floor(decRoza)}h ${Math.round((decRoza % 1) * 60)}m
+
+💡 _Calculated from true dawn (Fajr) to sunset (Maghrib)._
+
+👉 *View your location's interactive 12-month graph:*
+${shareUrl}`;
+
+      if (navigator.share) {
+        navigator.share({
+          title: "12-Month Daylight & Fasting Duration Chart",
+          text: shareMessage
+        }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(shareMessage).then(() => {
+          alert("Daylight chart summary copied to clipboard! You can now share it directly.");
+        });
+      }
+    }
+
+    // Initialize with default location
+    renderDynamicBars(currentLat);
+  </script>
+</body>
+</html>
