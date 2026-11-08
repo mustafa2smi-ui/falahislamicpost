@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal & Policies | Mufliha Islamic Data</title>
+  <style>
+    :root {
+      --wa-header: #075e54;
+      --wa-bg: #efeae2;
+      --card-bg: #ffffff;
+      --text: #111b21;
+      --teal: #128c7e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background: var(--wa-bg); color: var(--text); padding: 12px; display: flex; justify-content: center; }
+    .legal-container { width: 100%; max-width: 720px; background: var(--card-bg); border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.1); overflow: hidden; }
+    .legal-header { background: var(--wa-header); color: #fff; padding: 16px; display: flex; justify-content: space-between; align-items: center; }
+    .legal-header h1 { font-size: 17px; }
+    .lang-toggle { background: #25d366; color: #054c44; border: none; font-weight: 700; padding: 5px 12px; border-radius: 14px; cursor: pointer; font-size: 11.5px; }
+    .legal-nav { display: flex; overflow-x: auto; background: #054c44; padding: 6px; gap: 5px; scrollbar-width: none; }
+    .legal-nav::-webkit-scrollbar { display: none; }
+    .nav-btn { background: rgba(255,255,255,0.12); color: #e9edef; border: none; padding: 6px 12px; font-size: 11px; border-radius: 6px; cursor: pointer; white-space: nowrap; }
+    .nav-btn.active { background: #25d366; color: #054c44; font-weight: 700; }
+    .content-box { padding: 18px; line-height: 1.6; font-size: 13.5px; }
+    .content-box h2 { font-size: 16px; color: var(--teal); margin-bottom: 8px; margin-top: 14px; }
+    .content-box p { margin-bottom: 10px; }
+    .back-btn { display: inline-block; margin-top: 15px; color: var(--teal); font-weight: 700; text-decoration: none; font-size: 13px; }
+  </style>
+</head>
+<body>
+
+<div class="legal-container">
+  <div class="legal-header">
+    <h1 id="pageHeading">Mufliha Legal Portal</h1>
+    <button class="lang-toggle" onclick="toggleLanguage()">Switch to Hindi (हिंदी)</button>
+  </div>
+
+  <nav class="legal-nav">
+    <button class="nav-btn active" onclick="showTab('about', this)">About Us</button>
+    <button class="nav-btn" onclick="showTab('privacy', this)">Privacy Policy</button>
+    <button class="nav-btn" onclick="showTab('terms', this)">Terms & Conditions</button>
+    <button class="nav-btn" onclick="showTab('disclaimer', this)">Disclaimer</button>
+    <button class="nav-btn" onclick="showTab('copyright', this)">Copyright & DMCA</button>
+    <button class="nav-btn" onclick="showTab('child', this)">Child Protection (COPPA)</button>
+    <button class="nav-btn" onclick="showTab('faq', this)">FAQ</button>
+    <button class="nav-btn" onclick="showTab('contact', this)">Contact Us</button>
+  </nav>
+
+  <div class="content-box" id="legalContentArea">
+    <!-- Injected dynamically -->
+  </div>
+</div>
+
+<script>
+let currentLang = 'en';
+let currentTab = 'about';
+
+const legalData = {
+  about: {
+    en: `<h2>About Mufliha Islamic Data</h2>
+         <p>Mufliha Islamic Data is an educational web platform dedicated to delivering authentic Islamic teachings, Sahih Hadees, daily masnoon duas, accurate prayer timetables, and interactive quizzes in a clean, distraction-free environment.</p>
+         <p>Our vision is to make religious learning accessible for everyone across Roman Urdu, Hindi, Urdu, and English while maintaining technical simplicity and zero privacy violations.</p>`,
+    hi: `<h2>मुफ्लीहा इस्लामिक डेटा के बारे में (About Us)</h2>
+         <p>मुफ्लीहा इस्लामिक डेटा एक शैक्षिक वेब मंच है जिसका उद्देश्य सही हदीस, रोज़मर्रा की दुआएं, नमाज़ के सही औक़ात और दीनी सवाल-जवाब को एक साफ़ और आसान माहौल में लोगों तक पहुंचाना है।</p>
+         <p>हमारा मक़सद बिना किसी भटकाव के दीनी मालूमात को हिंदी, रोमन उर्दू, उर्दू और अंग्रेजी में आम अवाम तक पहुंचाना है।</p>`
+  },
+  privacy: {
+    en: `<h2>Privacy Policy</h2>
+         <p>Last updated: 2026. At Mufliha, we respect your privacy. We do NOT collect personal sensitive data, passwords, or payment records.</p>
+         <p><b>Cookies & Local Storage:</b> We use standard browser LocalStorage solely to remember your chosen theme, saved favorite posts, notes, and prayer city preferences locally on your phone.</p>
+         <p><b>Third-Party Embeds:</b> Google Forms or Aladhan Prayer APIs may log standard anonymous IP network headers to deliver services securely.</p>`,
+    hi: `<h2>गोपनीयता नीति (Privacy Policy)</h2>
+         <p>मुफ्लीहा आपकी निजता (प्राइवेसी) का पूरा सम्मान करता है। हम आपका कोई भी निजी डेटा, पासवर्ड या बैंक रिकॉर्ड जमा नहीं करते।</p>
+         <p><b>लोकल स्टोरेज:</b> हम आपके फोन में सिर्फ आपकी पसंद की थीम, पसंदीदा पोस्ट्स और नमाज़ के शहर को याद रखने के लिए ब्राउज़र मेमोरी का उपयोग करते हैं।</p>`
+  },
+  terms: {
+    en: `<h2>Terms & Conditions</h2>
+         <p>By browsing Mufliha, you agree to access content strictly for beneficial, lawful, and peaceful educational purposes.</p>
+         <p>Users participating in community surveys or sponsored promotions must ensure their entries are free from hate speech, harassment, or malicious links.</p>`,
+    hi: `<h2>नियम एवं शर्तें (Terms & Conditions)</h2>
+         <p>मुफ्लीहा का उपयोग करते हुए आप इस बात से सहमत होते हैं कि आप इस सामग्री का उपयोग केवल शांतिपूर्ण और दीनी तालीम के लिए करेंगे।</p>
+         <p>किसी भी प्रकार के नफ़रती बयान या ग़लत प्रचार की सख्त मनाही है।</p>`
+  },
+  disclaimer: {
+    en: `<h2>Religious & Fatawa Disclaimer</h2>
+         <p>The daily educational posts, rulings, and references compiled on Mufliha are for general Islamic learning. They do NOT replace formal legal fatawa from verified Islamic jurists (Muftis). For critical personal or family matters, please consult accredited local scholars.</p>`,
+    hi: `<h2>धार्मिक एवं फ़तवा अस्वीकरण (Disclaimer)</h2>
+         <p>मुफ्लीहा पर दी गई मालूमात आम दीनी समझ और तालीम के लिए हैं। यह किसी मुफ़्ती-ए-कराम के औपचारिक फ़तवे का विकल्प नहीं हैं। अहम शरई मामलों में हमेशा अपने स्थानीय मुफ़्ती से संपर्क करें।</p>`
+  },
+  copyright: {
+    en: `<h2>Copyright & DMCA Policy</h2>
+         <p>Islamic sacred texts (Quran and Hadees) belong to humanity. However, original translations, custom UI layouts, interactive quizzes, and designs are protected under Mufliha.</p>
+         <p>If you believe any content infringes your intellectual property, contact us immediately for review and removal.</p>`,
+    hi: `<h2>कॉपीराइट एवं डीएमसीए (Copyright & DMCA)</h2>
+         <p>कुरआन और हदीस की बुनियादी तालीम पूरी इंसानियत के लिए है। लेकिन इस वेबसाइट का खास डिज़ाइन, सवाल-जवाब और अनुवाद मुफ्लीहा द्वारा तैयार किए गए हैं।</p>
+         <p>यदि किसी सामग्री पर आपका कॉपीराइट दावा है, तो हमें तुरंत ईमेल या व्हाट्सएप पर सूचित करें।</p>`
+  },
+  child: {
+    en: `<h2>Child Online Privacy & Protection (COPPA / Digital Safety)</h2>
+         <p>Mufliha complies with digital child safety principles. We do not solicit personal identification from minors, nor do we run adult, violent, or tracking advertisements. The platform is entirely safe for children studying basic duas, quizzes, and morals.</p>`,
+    hi: `<h2>बच्चों की डिजिटल सुरक्षा (Child Protection)</h2>
+         <p>मुफ्लीहा बच्चों की डिजिटल सुरक्षा का पूरा ध्यान रखता है। हम बच्चों से कोई पहचान या जानकारी नहीं मांगते। हमारी वेबसाइट पर कोई भी अश्लील या हानिकारक विज्ञापन नहीं होते। यह बच्चों की दीनी तालीम के लिए पूरी तरह सुरक्षित है।</p>`
+  },
+  faq: {
+    en: `<h2>Frequently Asked Questions (FAQ)</h2>
+         <p><b>Q1: Is Mufliha free to use?</b><br>Yes, Alhamdulillah, completely free for everyone.</p>
+         <p><b>Q2: How are prayer times calculated?</b><br>Times are calculated based on your detected city coordinates using standard astronomical calculations (Shafi'i & Hanafi methods supported).</p>
+         <p><b>Q3: How do I advertise my business?</b><br>Visit our Sponsor tab and submit your business details via WhatsApp.</p>`,
+    hi: `<h2>अक्सर पूछे जाने वाले सवाल (FAQ)</h2>
+         <p><b>सवाल 1: क्या मुफ्लीहा पूरी तरह मुफ़्त है?</b><br>हाँ, अल्हम्दुलिल्लाह यह सभी के लिए पूरी तरह मुफ़्त है।</p>
+         <p><b>सवाल 2: नमाज़ के समय की गणना कैसे होती है?</b><br>यह आपके शहर के हिसाब से शाफ़ई और हनफ़ी दोनों तरीकों से ऑटोमैटिक निकाली जाती है।</p>`
+  },
+  contact: {
+    en: `<h2>Contact Us</h2>
+         <p>For inquiries, corrections, or sponsorship bookings:</p>
+         <p>📧 Email: <b>support@mufliha.com</b></p>
+         <p>💬 WhatsApp Rabta: Use the direct chat button in the Sponsor section.</p>`,
+    hi: `<h2>संपर्क करें (Contact Us)</h2>
+         <p>दीनी तस्दीक़, सुधार या विज्ञापन के लिए संपर्क करें:</p>
+         <p>📧 ईमेल: <b>support@mufliha.com</b></p>
+         <p>💬 व्हाट्सएप: स्पॉन्सर सेक्शन में दिए गए बटन पर क्लिक करें।</p>`
+  }
+};
+
+function renderContent() {
+  const content = legalData[currentTab][currentLang];
+  document.getElementById('legalContentArea').innerHTML = content + `<br><a href="index.html" class="back-btn">← Wapas Main App Par Jayein</a>`;
+  document.getElementById('pageHeading').innerText = currentLang === 'en' ? "Mufliha Legal Portal" : "मुफ्लीहा लीगल एवं पॉलिसी पोर्टल";
+}
+
+function showTab(tab, btn) {
+  currentTab = tab;
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderContent();
+}
+
+function toggleLanguage() {
+  currentLang = currentLang === 'en' ? 'hi' : 'en';
+  document.querySelector('.lang-toggle').innerText = currentLang === 'en' ? "Switch to Hindi (हिंदी)" : "Switch to English";
+  renderContent();
+}
+
+renderContent();
+</script>
+</body>
+</html>
