@@ -1610,8 +1610,8 @@ document.addEventListener('keydown', e => {
         const normalAds = allAds.filter(ad => !ad.premium);
 
         // Helper function to build dynamic action buttons (WhatsApp, Email, Website)
-        const buildAdActionBtns = (ad) => {
-          let btns = `<div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:8px;">`;
+          const buildAdActionBtns = (ad) => {
+          let btns = `<div style="display:flex; flex-wrap:wrap; gap:5px; margin-top:8px; align-items:center;">`;
           
           if (ad.contactWhatsApp) {
             btns += `
@@ -1631,6 +1631,14 @@ document.addEventListener('keydown', e => {
                 🌐 Website ↗
               </a>`;
           }
+
+          // 📤 Naya Universal Share Button
+          btns += `
+            <button onclick="shareSponsorDirect(${JSON.stringify(ad).replace(/"/g, '&quot;')})" class="ad-cta-btn" style="background:#e2e8f0; color:#1e293b; border:none; cursor:pointer;" title="Sponsor Share Karein">
+              📤 Share
+            </button>
+          `;
+
           btns += `</div>`;
           return btns;
         };
@@ -2476,6 +2484,37 @@ document.addEventListener('keydown', e => {
         { timeout: 10000 }
       );
     }
+    function shareSponsorDirect(ad) {
+  if (!ad) return;
+  
+  let msg = `*📢 ${ad.title || 'Sponsor Khabar'}*\n\n${ad.content}\n`;
+  
+  if (ad.contactWhatsApp) {
+    msg += `\n💬 WhatsApp Rabta: https://wa.me/${ad.contactWhatsApp}`;
+  }
+  if (ad.contactEmail) {
+    msg += `\n✉️ Email: ${ad.contactEmail}`;
+  }
+  if (ad.websiteUrl) {
+    msg += `\n🌐 Website: ${ad.websiteUrl}`;
+  }
+  
+  msg += `\n\n🔗 *Falah Islamic Post:* ${window.location.href}`;
+
+  if (navigator.share) {
+    navigator.share({
+      title: ad.title || 'Sponsor Ad',
+      text: msg
+    }).catch(() => {});
+  } else if (navigator.clipboard) {
+    navigator.clipboard.writeText(msg).then(() => {
+      showToast("📋 Sponsor Post Copied!");
+    });
+  } else {
+    const shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`;
+    window.open(shareUrl, '_blank');
+  }
+}
 // Native XSS Shield Function
 function escapeHTML(str) {
   if (!str) return '';
