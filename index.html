@@ -1901,11 +1901,17 @@ document.addEventListener('keydown', e => {
       showToast(isCollapsed ? "Full Chat Screen Active" : "Controls Wapas Aa Gaye");
     }
 
-    function formatPostForCopy(item) {
+        function formatPostForCopy(item) {
       if (!item) return "";
       const isString = typeof item === 'string';
-      if (isString) return `${item}\n\n🔗 Falah Islamic Post: ${window.location.href}`;
 
+      // 1. Agar Direct String ho
+      if (isString) {
+        let cleanText = convertTableForWhatsApp(item);
+        return `${cleanText}\n\n🔗 Falah Islamic Post: ${window.location.href}`;
+      }
+
+      // 2. Agar Quiz ho
       if (item.type === 'quiz') {
         let quizText = `*${item.title || '🎯 Islamic Sawal / Quiz'}*\n\n❓ *Sawal:* ${item.question}\n\n`;
         if (Array.isArray(item.options)) {
@@ -1913,25 +1919,66 @@ document.addEventListener('keydown', e => {
             quizText += `${String.fromCharCode(65 + idx)}) ${opt}\n`;
           });
         }
-        quizText += `\n💡 *Sahi Jawab janne ke liye link kholin:*\n🔗 ${window.location.href}`;
+        quizText += `\n💡 *Sahi Jawab janne ke liye link kholein:*\n🔗 ${window.location.href}`;
         return quizText;
       }
 
+      // 3. Agar Sponsor ho
       if (item.type === 'ad') {
         let adText = `*📢 ${item.title || 'Sponsor Khabar'}*\n\n${item.content}`;
-        if (item.contactWhatsApp) adText += `\n\n💬 WhatsApp: https://wa.me/${item.contactWhatsApp}`;
+        if (ad.contactWhatsApp) adText += `\n\n💬 WhatsApp: https://wa.me/${item.contactWhatsApp}`;
         adText += `\n\n🔗 Falah Islamic Post: ${window.location.href}`;
         return adText;
       }
 
+      // 4. Regular Structured Post (Table parsing included)
       let text = "";
       if (item.title) text += `*${item.title}*\n\n`;
-      if (item.content) text += `${item.content}\n`;
+      
+      if (item.content) {
+        let processedContent = convertTableForWhatsApp(item.content);
+        text += `${processedContent}\n`;
+      }
+      
       if (item.linkUrl) text += `\n🔗 Khabar: ${item.linkUrl}`;
       if (item.youtubeUrl) text += `\n▶️ Video: ${item.youtubeUrl}`;
       text += `\n\n🔗 Falah Islamic Post: ${window.location.href}`;
       return text;
     }
+
+    // Helper: [table] ko sundar WhatsApp text format me convert karne ke liye
+    function convertTableForWhatsApp(rawContent) {
+      if (!rawContent || !rawContent.includes('[table]')) return rawContent;
+
+      return rawContent.replace(/\[table\]([\s\S]*?)\[\/table\]/g, function(match, tableText) {
+        const lines = tableText.trim().split('\n').map(l => l.trim()).filter(l => l.length > 0 && !l.includes('---'));
+        if (lines.length < 2) return '';
+
+        // Header row
+        const headers = lines[0].split('|').map(h => h.trim());
+        let waTableText = `\n📊 *Jadwal / Tafseel:*\n──────────────────\n`;
+
+        // Data rows
+        for (let i = 1; i < lines.length; i++) {
+          const cols = lines[i].split('|').map(c => c.trim());
+          if (cols.length > 0 && cols[0]) {
+            // Pehla column main item (Bold)
+            waTableText += `📌 *${cols[0]}*\n`;
+            
+            // Baqi columns details bankar aayenge
+            for (let j = 1; j < cols.length; j++) {
+              if (cols[j]) {
+                const headerName = headers[j] || 'Maloomat';
+                waTableText += `   • ${headerName}: ${cols[j]}\n`;
+              }
+            }
+            waTableText += `──────────────────\n`;
+          }
+        }
+        return waTableText;
+      });
+    }
+
 
     function copyPostText(index) {
       const item = myFeed[index];
