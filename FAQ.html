@@ -6,22 +6,22 @@
 
   <!-- SEO Meta Tags -->
   <title>Falah Islamic Post - FAQ & Help | Frequently Asked Questions</title>
-  <meta name="description" content="Find answers to frequently asked questions about Falah Islamic Post. Learn about daily hadith feed, prayer times, Hijri calendar, WhatsApp status generator, and more.">
-  <meta name="keywords" content="Falah Islamic Post FAQ, Islamic portal help, daily hadith, prayer times, Hijri calendar, WhatsApp status card maker, Islamic quizzes">
+  <meta name="description" content="Find answers to frequently asked questions about Falah Islamic Post. Learn about daily Hadith feed, prayer times, Hijri calendar, Qibla, Tasbeeh, Zakat calculator, WhatsApp status card generator, and more.">
+  <meta name="keywords" content="Falah Islamic Post FAQ, help, frequently asked questions, Islamic dashboard, prayer times, Hijri calendar, Qibla, Tasbeeh, Zakat, WhatsApp Status Generator">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://mufliha.com/faq.html">
 
   <!-- Open Graph Tags -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Falah Islamic Post - FAQ & Help">
-  <meta property="og:description" content="Frequently asked questions about Falah Islamic Post. Get help with Islamic posts, prayer times, calendar, status maker, and privacy.">
+  <meta property="og:description" content="Frequently asked questions about Falah Islamic Post. Get help with prayer times, calendar, Qibla, Quran, Tasbeeh, and deeni feed.">
   <meta property="og:url" content="https://mufliha.com/faq.html">
   <meta property="og:site_name" content="Falah Islamic Post">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Falah Islamic Post - FAQ & Help">
-  <meta name="twitter:description" content="Frequently asked questions about Falah Islamic Post.">
+  <meta name="twitter:description" content="Frequently asked questions about Falah Islamic Post Islamic utilities & daily feed.">
 
   <!-- JSON-LD Schema Markup for FAQ Page -->
   <script type="application/ld+json">
@@ -36,41 +36,7 @@
         "description": "Frequently asked questions about Falah Islamic Post.",
         "isPartOf": {
           "@id": "https://mufliha.com/#website"
-        },
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Falah Islamic Post?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Falah Islamic Post is a high-performance Islamic web portal providing daily authentic Hadith, Duas, daily Islamic reminders, astronomical prayer times, dynamic Hijri calendar, interactive quizzes, and a native WhatsApp Status card maker."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is Falah Islamic Post free to use?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, Falah Islamic Post is completely free to use without any financial barrier or subscription fee."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How does the WhatsApp Status Card Maker work?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Using native client-side HTML5 Canvas, it converts any Hadith or reminder into a high-definition 1080x1080 square poster in under a second without uploading data to any external server."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does Falah Islamic Post store my personal data?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. All user data, including favorites and notes, is stored locally in your browser's LocalStorage. We do not maintain user databases or track personal activity."
-            }
-          }
-        ]
+        }
       },
       {
         "@type": "WebSite",
@@ -332,6 +298,10 @@
       border-color: #cbd5e1;
     }
 
+    .faq-item.hidden {
+      display: none;
+    }
+
     .faq-question {
       padding: 16px 20px;
       display: flex;
@@ -385,7 +355,7 @@
 
     .faq-answer.open {
       padding: 0 20px 16px;
-      max-height: 600px;
+      max-height: 650px;
     }
 
     .faq-answer p {
@@ -393,6 +363,10 @@
       color: #475569;
       line-height: 1.6;
       margin-bottom: 0;
+    }
+
+    .faq-answer strong {
+      color: #0f172a;
     }
 
     /* No Results */
@@ -497,7 +471,6 @@
       }
     }
 
-    /* Print Styles */
     @media print {
       .faq-header, .language-switcher, .faq-search-box, .faq-categories, .faq-footer, .back-home-btn {
         display: none !important;
@@ -530,7 +503,7 @@
         <div class="mosque-icon">🕌</div>
         <div class="brand-text">
           <h1>Falah Islamic Post</h1>
-          <p>Sharing Ilm, Inspiring the Ummah</p>
+          <p>Islamic Utilities, Hadith Feed & Prayer Times</p>
         </div>
       </div>
       <a href="index.html" class="back-home-btn">🏠 Back to Portal</a>
@@ -565,11 +538,10 @@
     <div class="faq-categories" id="faqCategories">
       <button class="faq-cat-btn active" data-cat="all" onclick="filterCategory('all', this)">📌 All</button>
       <button class="faq-cat-btn" data-cat="general" onclick="filterCategory('general', this)">ℹ️ General</button>
-      <button class="faq-cat-btn" data-cat="feed" onclick="filterCategory('feed', this)">📜 Posts & Feed</button>
-      <button class="faq-cat-btn" data-cat="prayer" onclick="filterCategory('prayer', this)">🕌 Prayer & Time</button>
-      <button class="faq-cat-btn" data-cat="calendar" onclick="filterCategory('calendar', this)">📅 Hijri Calendar</button>
-      <button class="faq-cat-btn" data-cat="tools" onclick="filterCategory('tools', this)">🛠️ Tools & Status</button>
-      <button class="faq-cat-btn" data-cat="technical" onclick="filterCategory('technical', this)">💻 Technical & Privacy</button>
+      <button class="faq-cat-btn" data-cat="prayer" onclick="filterCategory('prayer', this)">🕌 Prayer</button>
+      <button class="faq-cat-btn" data-cat="calendar" onclick="filterCategory('calendar', this)">📅 Calendar</button>
+      <button class="faq-cat-btn" data-cat="tools" onclick="filterCategory('tools', this)">🛠️ Tools</button>
+      <button class="faq-cat-btn" data-cat="technical" onclick="filterCategory('technical', this)">💻 Technical</button>
     </div>
 
     <!-- FAQ List -->
@@ -597,7 +569,7 @@
 
   </main>
 
-  <!-- JAVASCRIPT LOGIC & CONTENT -->
+  <!-- JAVASCRIPT - COMPLETE MULTI-LANGUAGE DATABASE (ALL 35 FAQS) -->
   <script>
     const faqContent = {
 
@@ -611,11 +583,10 @@
         categories: {
           all: "📌 All",
           general: "ℹ️ General",
-          feed: "📜 Posts & Feed",
-          prayer: "🕌 Prayer & Time",
-          calendar: "📅 Hijri Calendar",
-          tools: "🛠️ Tools & Status",
-          technical: "💻 Technical & Privacy"
+          prayer: "🕌 Prayer",
+          calendar: "📅 Calendar",
+          tools: "🛠️ Tools",
+          technical: "💻 Technical"
         },
         noResults: {
           title: "No results found",
@@ -623,94 +594,214 @@
         },
         faqs: [
           {
+            id: 0,
+            category: "calendar",
+            question: "Why does the Hijri date change in the evening after Sunset?",
+            answer: "<strong>Islamic Astronomical Rule:</strong><br><br>In the Islamic lunar calendar, a new day begins at <strong>Maghrib (Sunset)</strong> rather than at midnight (12:00 AM). This is based on the Islamic principle that the day follows the night.<br><br>• <strong>Why this happens:</strong> According to Islamic tradition, the day starts with the setting of the sun. When the sun sets, the new Islamic day begins.<br>• <strong>What this means for you:</strong> The Gregorian date may remain the same while the Hijri date advances after sunset. For example, if today is the 1st of Ramadan, after Maghrib it becomes the 2nd of Ramadan.<br>• <strong>How we handle it:</strong> Falah Islamic Post automatically updates the Hijri date at sunset. You don't need to manually change anything — the system handles this transition for you."
+          },
+          {
             id: 1,
             category: "general",
             question: "What is Falah Islamic Post?",
-            answer: "Falah Islamic Post is a dedicated, mobile-friendly Islamic web portal designed to share authentic Islamic knowledge, daily Duas, Quranic reflections, Sunnah practices, and verified Hadiths. It combines modern web capabilities with traditional Islamic learning, featuring prayer times, Hijri calculations, and visual sharing tools."
+            answer: "Falah Islamic Post is a comprehensive Islamic utility portal and daily deeni feed that provides prayer times, Hijri calendar, Qibla direction, Quran reader, digital tasbeeh, Zakat calculator, daily duas, hadith, Islamic quiz, and news updates. It is designed to help Muslims stay connected to their faith through a single, lightweight platform."
           },
           {
             id: 2,
             category: "general",
             question: "Is Falah Islamic Post free to use?",
-            answer: "✅ Yes, Falah Islamic Post is 100% free and open for the entire Ummah. There are no subscriptions, registration requirements, or paywalls."
+            answer: "✅ Yes, Falah Islamic Post is completely free to use. We believe in serving the Muslim community without any financial barriers. There are no hidden charges, subscriptions, or premium fees."
           },
           {
             id: 3,
             category: "general",
-            question: "Do I need to sign up or create an account?",
-            answer: "No account is required. You can access all posts, interactive quizzes, calendar tools, and image status generators immediately upon opening the website."
+            question: "Do I need to create an account?",
+            answer: "No, you don't need to create an account to use Falah Islamic Post. All your data and preferences are stored locally in your browser. This means you can start using the platform immediately without any registration."
           },
           {
             id: 4,
-            category: "feed",
-            question: "How is content categorized on the feed?",
-            answer: "Posts are neatly sorted under distinct category pills: <strong>Hadees</strong> (Prophetic traditions), <strong>Dua</strong> (supplications), <strong>Roze Marra</strong> (daily lifestyle & etiquettes), <strong>Masail</strong> (practical guidance), and <strong>Aqwal</strong> (quotes of wisdom). You can tap any category button at the top to filter the feed."
+            category: "general",
+            question: "Can I use Falah Islamic Post on my mobile phone?",
+            answer: "Yes, Falah Islamic Post is fully responsive and works seamlessly across smartphones, tablets, and desktop computers with a touch-friendly, mobile-first design."
           },
           {
             id: 5,
-            category: "feed",
-            question: "How does the Favorite (❤️) button work?",
-            answer: "Tapping the heart icon on any post saves it directly into your device's browser memory (LocalStorage). You can view your saved items anytime by clicking the 'Saved' filter tab, even without an active internet connection."
+            category: "prayer",
+            question: "How accurate are the prayer times?",
+            answer: "Prayer times are calculated using astronomical algorithms from the Aladhan API. They may vary from local mosque timings by 4-5 minutes depending on your location and calculation method. For religious obligations like fasting (Sawm) and congregational prayer, we recommend verifying timings with your local mosque."
           },
           {
             id: 6,
-            category: "tools",
-            question: "What is the WhatsApp Status Image Card Generator (🖼️)?",
-            answer: "Next to each post, there is an image icon (🖼️). Clicking it uses your browser's built-in Canvas engine to transform that post into an elegant, high-resolution (1080x1080) Islamic card featuring an emerald background and golden borders, ready to be saved and shared directly to your WhatsApp Status or Instagram story."
+            category: "prayer",
+            question: "How do I change the location for prayer times?",
+            answer: "You can change your location by clicking the 'Change / GPS' button on the Prayer Times card or drawer. You can either allow GPS access to auto-detect your location, or manually enter your city name. Your location preference is saved for future visits."
           },
           {
             id: 7,
-            category: "feed",
-            question: "Why do comparison tables look different when shared to WhatsApp?",
-            answer: "Web tables do not format cleanly on messaging apps. Falah Islamic Post automatically parses comparison tables into clean, structured bullet lists with bold headings when you tap Copy (📋) or Share (↗), ensuring recipients receive a beautifully formatted WhatsApp message."
+            category: "prayer",
+            question: "What is the 'active prayer' highlight?",
+            answer: "The active prayer highlight shows the current prayer time based on your location's time zone. It automatically updates throughout the day to help you track which prayer window is currently active."
           },
           {
             id: 8,
             category: "prayer",
-            question: "How are Salah (Prayer) times calculated?",
-            answer: "Prayer times are computed using standard astronomical calculations. Because local mosque timings may vary slightly by 3 to 5 minutes based on geographical elevation and juristic methods (Hanafi/Shafi'i), we recommend verifying with your local congregation for congregational prayers."
+            question: "What does the prayer warning note mean?",
+            answer: "The warning note indicates that prayer timings are based on astronomical calculations and may have a 4-5 minute variation. We recommend verifying with your local mosque, especially for critical religious observances like Sehri cutoff and Fajr."
           },
           {
             id: 9,
             category: "calendar",
-            question: "Why does the Hijri date advance in the evening after Sunset (Maghrib)?",
-            answer: "In Islamic sacred chronology, the lunar day begins at <strong>Maghrib (sunset)</strong> rather than 12:00 midnight. Falah Islamic Post's astronomical engine respects this rule, transitioning to the next Hijri date as soon as the sun sets."
+            question: "How does the Hijri calendar work?",
+            answer: "The Hijri calendar is based on astronomical calculations and automatically updates after Maghrib (sunset) according to Islamic Shariah. You can adjust the date offset for different regions using the settings in the side drawer."
           },
           {
             id: 10,
             category: "calendar",
-            question: "What is the Hijri Date Correction Offset?",
-            answer: "Due to local moon sightings, Islamic calendar dates may differ by 1 day between regional zones (such as Saudi Arabia/Gulf versus India/Pakistan). The portal includes an offset selector allowing you to sync the Hijri calendar precisely with your local Hilal committee announcements."
+            question: "What is the Hijri date offset setting?",
+            answer: "The Hijri date offset allows you to adjust the calendar for different regions. India, Pakistan, and Bangladesh typically use -1 day relative to Gulf sightings. This setting can be adjusted in the drawer under 'Hijri Date Correction'."
           },
           {
             id: 11,
-            category: "tools",
-            question: "How do the Interactive Islamic Quizzes work?",
-            answer: "Quizzes are presented as interactive question cards in the feed. Tapping an option provides instant visual feedback—highlighting the correct answer in green while explaining the background reference, helping you test and expand your Islamic knowledge."
+            category: "calendar",
+            question: "What are the seasonal blocks in the English calendar?",
+            answer: "The seasonal blocks show the four seasons: Spring/Summer (Mar-May), Monsoon (Jun-Aug), Autumn (Sep-Nov), and Winter (Dec-Feb). Clicking on a season will navigate to the first month of that season in the calendar."
           },
           {
             id: 12,
-            category: "general",
-            question: "What are Sponsor / Khidmat Cards?",
-            answer: "Falah Islamic Post may display vetted promotional cards or community notices. Each card is clearly marked with a sponsor badge and includes direct WhatsApp/Email contact buttons. We do not process financial transactions directly."
+            category: "calendar",
+            question: "Can I add notes to calendar dates?",
+            answer: "Yes, you can add notes to any date by clicking on the date in the calendar. Notes are stored locally in your browser and will appear as a dot indicator on that date."
           },
           {
             id: 13,
-            category: "technical",
-            question: "Does Falah Islamic Post track or store my personal data?",
-            answer: "<strong>No.</strong> The portal operates strictly client-side. Your favorites, dark mode preference, notes, and reading history remain entirely on your personal device inside your browser's LocalStorage. We do not collect names, passwords, or browsing data."
+            category: "tools",
+            question: "How do I use the digital Tasbeeh?",
+            answer: "Open the 'Tasbeeh' tool from the drawer, then tap 'TAP COUNT' to increment the counter. Your progress is saved locally. You can set targets like 33, 99, or 1000 depending on your dhikr."
           },
           {
             id: 14,
-            category: "technical",
-            question: "Can I use Falah Islamic Post offline as an app (PWA)?",
-            answer: "Yes! Falah Islamic Post is designed as an offline-first Progressive Web App. On Android (Chrome), tap 'Add to Home screen' or 'Install App'. On iPhone (Safari), tap Share and select 'Add to Home Screen'. Once added, previous posts and utility calculations remain accessible offline."
+            category: "tools",
+            question: "How does the Zakat calculator work?",
+            answer: "Enter your total cash/bank balance, gold and silver asset value, and subtract any short-term debts. The calculator automatically calculates your Zakat payable at 2.5% of your net savings above the Nisab threshold."
           },
           {
             id: 15,
+            category: "tools",
+            question: "How does the Qibla direction finder work?",
+            answer: "The Qibla finder uses your device's compass/sensor and GPS location to calculate the direction to the Kaaba in Makkah. For accurate results, ensure your device's compass is calibrated and you are away from magnetic interference."
+          },
+          {
+            id: 16,
+            category: "tools",
+            question: "What is the 33-Year Cycle feature?",
+            answer: "The 33-Year Cycle explains the lunar calendar's seasonal shift. Since the lunar year is ~11 days shorter than the solar year, every Islamic month (including Ramadan) completes a full seasonal rotation every 33 Gregorian years."
+          },
+          {
+            id: 17,
             category: "technical",
-            question: "What happens if I clear my browser's cache or cookies?",
-            answer: "Because all your saved favorites (❤️) and custom notes reside strictly in your local device memory, clearing browser storage will reset those local bookmarks. Regular content from the portal will simply re-sync upon your next visit."
+            question: "Does Falah Islamic Post store my personal data?",
+            answer: "No. All user data is stored locally in your browser's LocalStorage and IndexedDB. We do not have servers collecting or storing personal information. Your data remains on your device."
+          },
+          {
+            id: 18,
+            category: "technical",
+            question: "What happens if I clear my browser data?",
+            answer: "⚠️ Since your data is stored locally, clearing browser data (cache, cookies, LocalStorage) will remove saved notes, favorites, tasbeeh counts, and custom settings. Public feed content re-downloads normally on your next visit."
+          },
+          {
+            id: 19,
+            category: "technical",
+            question: "How do I change the language?",
+            answer: "You can change the language using the buttons in the header. Falah Islamic Post supports English, Urdu, Hindi, and Romanized Hinglish. Your preference is remembered automatically."
+          },
+          {
+            id: 20,
+            category: "technical",
+            question: "Can I use Falah Islamic Post offline?",
+            answer: "Yes! Core features including saved bookmarks, notes, digital tasbeeh, offline calendar calculations, and the status card generator work offline. Real-time prayer synchronization and new feed posts require an internet connection."
+          },
+          {
+            id: 21,
+            category: "technical",
+            question: "What third-party services does Falah Islamic Post use?",
+            answer: "Falah Islamic Post uses Aladhan API (prayer times), Nominatim/OpenStreetMap (geocoding), and ipapi.co (IP location fallback). These services receive only anonymized coordinate requests without personal identifiers."
+          },
+          {
+            id: 22,
+            category: "technical",
+            question: "What if I lose my locally saved data?",
+            answer: "Since data is stored client-side for privacy, cleared browser data cannot be recovered remotely. We recommend keeping backups of important personal notes."
+          },
+          {
+            id: 23,
+            category: "calendar",
+            question: "What is the Islamic Event Hub and how does it work?",
+            answer: "The Islamic Event Hub displays timely Islamic information automatically: Jumu'ah cards on Fridays with Sunnah recommendations, Ramadan countdowns, and upcoming Islamic date alerts that expire automatically once the event passes."
+          },
+          {
+            id: 24,
+            category: "calendar",
+            question: "What events are shown in the Upcoming Events section?",
+            answer: "The section displays major Islamic occasions: Eid-ul-Fitr, Eid-ul-Adha, Ashura, Laylatul Qadr, Hajj, and sacred months throughout the Hijri year."
+          },
+          {
+            id: 25,
+            category: "general",
+            question: "Does Falah Islamic Post show advertisements?",
+            answer: "Yes, verified community announcements, sponsor cards, or banners may be shown from time to time to cover domain and operational costs, keeping the platform free for everyone."
+          },
+          {
+            id: 26,
+            category: "general",
+            question: "What are the precautions when interacting with sponsors?",
+            answer: "Transactions with any advertiser or service provider are direct between you and that party. Falah Islamic Post does not handle payments or endorse products. Never share OTPs, passwords, or bank credentials with anyone."
+          },
+          {
+            id: 27,
+            category: "technical",
+            question: "What is the source of Quranic data in Falah Islamic Post?",
+            answer: "Quranic text and recitation metadata are retrieved using open-source verified APIs such as AlQuran.cloud (Islamic Network) for educational and reflective reading purposes."
+          },
+          {
+            id: 28,
+            category: "technical",
+            question: "What is a Progressive Web App (PWA) and how does it work?",
+            answer: "Falah Islamic Post is an installable PWA. It loads fast via client caching, functions reliably on slow connections, and can be added directly to your device home screen like a native app."
+          },
+          {
+            id: 29,
+            category: "technical",
+            question: "How do I install Falah Islamic Post as a PWA on my device?",
+            answer: "• On Android (Chrome): Tap the three-dot menu (⋮) and select 'Add to Home screen' or 'Install app'.<br>• On iOS (Safari): Tap the Share icon (⎙), scroll down and choose 'Add to Home Screen'."
+          },
+          {
+            id: 30,
+            category: "technical",
+            question: "Can deleted images or user data be recovered?",
+            answer: "No. Since all personal media, notes, and favorites reside strictly on your local device and are never uploaded to central servers, deleted local data cannot be recovered by us."
+          },
+          {
+            id: 31,
+            category: "tools",
+            question: "What is the WhatsApp Status Image Generator (🖼️)?",
+            answer: "Next to each post, clicking the 🖼️ button uses native client-side HTML5 Canvas to instantly produce a beautiful 1080x1080 HD square Islamic card with rich emerald gradient and gold borders, ready to download or post directly to your WhatsApp Status."
+          },
+          {
+            id: 32,
+            category: "tools",
+            question: "How do Interactive Islamic Quizzes work?",
+            answer: "Quiz bubbles appear in the feed. Tapping an option provides instant feedback, turning the correct answer green and displaying authentic Islamic background references."
+          },
+          {
+            id: 33,
+            category: "tools",
+            question: "Why do comparison tables convert to bullet points when shared?",
+            answer: "Raw HTML tables break in messaging apps. Falah Islamic Post automatically converts table contents into clean bullet lists with bold headers upon clicking Copy or WhatsApp Share."
+          },
+          {
+            id: 34,
+            category: "general",
+            question: "How do I save posts to read later (Favorites ❤️)?",
+            answer: "Tap the heart (❤️) icon on any post card. It saves immediately into your browser's local bookmark list. You can view all saved items anytime by selecting the 'Saved' filter button."
           }
         ]
       },
@@ -720,16 +811,15 @@
       // ==============================================================
       ur: {
         heroTitle: "❓ اکثر پوچھے جانے والے سوالات",
-        heroSub: "Falah Islamic Post کے بارے میں عام سوالات کے جوابات حاصل کریں۔ اگر آپ کو کوئی معلومات نہ ملے تو <a href='legal.html#contact'>ہم سے رابطہ کریں</a>۔",
+        heroSub: "Falah Islamic Post کے بارے میں عام سوالات کے جوابات تلاش کریں۔ اگر آپ کو اپنی مطلوبہ چیز نہ ملے تو <a href='legal.html#contact'>ہم سے رابطہ کریں</a>۔",
         searchPlaceholder: "سوالات تلاش کریں...",
         categories: {
           all: "📌 تمام",
           general: "ℹ️ عمومی",
-          feed: "📜 پوسٹس اور فیڈ",
-          prayer: "🕌 نماز اور اوقات",
-          calendar: "📅 ہجری کیلنڈر",
-          tools: "🛠️ ٹولز اور اسٹیٹس",
-          technical: "💻 تکنیکی اور پرائیویسی"
+          prayer: "🕌 نماز",
+          calendar: "📅 کیلنڈر",
+          tools: "🛠️ ٹولز",
+          technical: "💻 تکنیکی"
         },
         noResults: {
           title: "کوئی نتیجہ نہیں ملا",
@@ -737,94 +827,214 @@
         },
         faqs: [
           {
+            id: 0,
+            category: "calendar",
+            question: "ہجری تاریخ شام کو غروب آفتاب کے بعد کیوں بدل جاتی ہے؟",
+            answer: "<strong>اسلامی فلکیاتی اصول:</strong><br><br>اسلامی قمری کیلنڈر میں نیا دن <strong>مغرب (غروب آفتاب)</strong> سے شروع ہوتا ہے، نہ کہ رات 12 بجے سے۔<br><br>• <strong>ایسا کیوں ہوتا ہے:</strong> اسلامی شریعت کے مطابق دن سورج کے غروب ہونے سے شروع ہوتا ہے۔<br>• <strong>آپ کے لیے اس کا کیا مطلب ہے:</strong> انگریزی تاریخ وہی رہتی ہے جبکہ ہجری تاریخ مغرب کے بعد آگے بڑھ جاتی ہے۔<br>• <strong>Falah کا طریقہ کار:</strong> Falah Islamic Post غروب آفتاب کے وقت ہجری تاریخ خود بخود تبدیل کر دیتا ہے۔"
+          },
+          {
             id: 1,
             category: "general",
             question: "Falah Islamic Post کیا ہے؟",
-            answer: "Falah Islamic Post ایک جدید اور موبائل فرینڈلی اسلامی ویب پورٹل ہے جس کا مقصد مستند احادیث، روزمرہ کی دعائیں، سنن و آداب اور دینی پیغامات کو امت تک پہنچانا ہے۔ اس میں نماز کے اوقات، خودکار ہجری کیلنڈر اور واٹس ایپ اسٹیٹس کارڈ بنانے کے ٹولز شامل ہیں۔"
+            answer: "Falah Islamic Post ایک جامع اسلامی یوٹیلیٹی پورٹل اور روزانہ دینی فیڈ ہے جو نماز کے اوقات، ہجری کیلنڈر، قبلہ سمت، قرآن ریڈر، ڈیجیٹل تسبیح، زکوٰۃ کیلکولیٹر، روزانہ دعائیں، احادیث، اسلامی کوئز اور واٹس ایپ اسٹیٹس کارڈ جنریٹر فراہم کرتا ہے۔"
           },
           {
             id: 2,
             category: "general",
             question: "کیا Falah Islamic Post مفت ہے؟",
-            answer: "✅ جی ہاں، Falah Islamic Post تمام مسلمانوں کے لیے بلا معاوضہ اور بالکل مفت ہے۔ اس میں کوئی پوشیدہ فیس یا سبسکرپشن نہیں ہے۔"
+            answer: "✅ جی ہاں، Falah Islamic Post تمام مسلمانوں کے لیے بلا معاوضہ اور بالکل مفت ہے۔ کوئی پوشیدہ فیس یا سبسکرپشن نہیں ہے۔"
           },
           {
             id: 3,
             category: "general",
-            question: "کیا پورٹل استعمال کرنے کے لیے اکاؤنٹ بنانا ضروری ہے؟",
-            answer: "نہیں، کسی رجسٹریشن یا اکاؤنٹ کی ضرورت نہیں ہے۔ آپ ویب سائٹ کھولتے ہی تمام احادیث، دعائیں اور دینی ٹولز فوراً استعمال کر سکتے ہیں۔"
+            question: "کیا مجھے اکاؤنٹ بنانے کی ضرورت ہے؟",
+            answer: "نہیں، Falah Islamic Post استعمال کرنے کے لیے اکاؤنٹ کی ضرورت نہیں ہے۔ آپ کی تمام ترجیحات اور محفوظ پوسٹس آپ کے موبائل براؤزر میں ہی محفوظ رہتی ہیں۔"
           },
           {
             id: 4,
-            category: "feed",
-            question: "فیڈ میں پوسٹس کس طرح تقسیم کی گئی ہیں؟",
-            answer: "پوسٹس کو مختلف ٹیبز میں منظم کیا گیا ہے: <strong>حدیث</strong>، <strong>دعا</strong>، <strong>روزمرہ</strong>، <strong>مسائل</strong> اور <strong>اقوال</strong>۔ آپ اوپر موجود کسی بھی بٹن کو دبا کر اپنی پسند کا موضوع دیکھ سکتے ہیں۔"
+            category: "general",
+            question: "کیا میں Falah Islamic Post کو اپنے موبائل فون پر استعمال کر سکتا ہوں؟",
+            answer: "جی ہاں، یہ موبائل فرسٹ ڈیزائن کے ساتھ اسمارٹ فونز، ٹیبلٹس اور کمپیوٹرز پر یکساں اور تیز رفتاری سے کام کرتا ہے۔"
           },
           {
             id: 5,
-            category: "feed",
-            question: "پسندیدہ (❤️) کا بٹن کیسے کام کرتا ہے؟",
-            answer: "کسی بھی پوسٹ پر دل (❤️) کے نشان کو دبانے سے وہ پوسٹ آپ کے اپنے فون کے براؤزر میں محفوظ ہو جاتی ہے۔ بعد میں آپ 'Saved' کے بٹن پر کلک کر کے انٹرنیٹ کے بغیر بھی اپنی محفوظ شدہ پوسٹس پڑھ سکتے ہیں۔"
+            category: "prayer",
+            question: "نماز کے اوقات کتنے درست ہیں؟",
+            answer: "نماز کے اوقات Aladhan API کے فلکیاتی الگورتھم کے ذریعے شمار کیے جاتے ہیں۔ مقامی مسجد سے 4-5 منٹ کا فرق ہو سکتا ہے، اس لیے باجماعت نماز اور روزے کے لیے مقامی مسجد کے اوقات کی تصدیق کریں۔"
           },
           {
             id: 6,
-            category: "tools",
-            question: "واٹس ایپ اسٹیٹس امیج کارڈ جنریٹر (🖼️) کیا ہے؟",
-            answer: "ہر پوسٹ کے نیچے ایک فوٹو کا نشان (🖼️) دیا گیا ہے۔ اسے دباتے ہی براؤزر کا جدید کینوس سسٹم اس پوسٹ کو صرف 1 سیکنڈ میں زمردی رنگ کے خوبصورت اسکوائر (1080x1080) پوسٹر میں بدل دیتا ہے، جسے آپ ڈاؤن لوڈ کر کے اپنے واٹس ایپ اسٹیٹس پر لگا سکتے ہیں۔"
+            category: "prayer",
+            question: "نماز کے اوقات کے لیے مقام کیسے تبدیل کروں؟",
+            answer: "آپ نماز کارڈ یا ڈراور پر 'تبدیلی / GPS' بٹن پر کلک کر کے اپنا شہر منتخب کر سکتے ہیں یا جی پی ایس کے ذریعے آٹو ڈیٹیکٹ کر سکتے ہیں۔"
           },
           {
             id: 7,
-            category: "feed",
-            question: "جدول (Table) شیئر کرتے وقت ٹیکسٹ میں کیوں بدل جاتا ہے؟",
-            answer: "واٹس ایپ میسج میں کمپیوٹر ٹیبل ٹھیک نہیں دکھتا۔ اس لیے Falah Islamic Post کا اسکرپٹ شیئر اور کاپی کرتے وقت ٹیبل کو خوبصورت بلٹ پوائنٹس اور واضح سرخیوں میں تبدیل کر دیتا ہے تاکہ پڑھنے والے کو آسانی ہو۔"
+            category: "prayer",
+            question: "'فعال نماز' کا ہائی لائٹ کیا ہے؟",
+            answer: "یہ موجودہ وقت کے مطابق جاری نماز کے وقت کو ہائی لائٹ کرتا ہے اور وقت گزرنے کے ساتھ اگلی نماز پر خود بخود منتقل ہو جاتا ہے۔"
           },
           {
             id: 8,
             category: "prayer",
-            question: "نماز کے اوقات کا حساب کیسے لگایا جاتا ہے؟",
-            answer: "نماز کے اوقات فلکیاتی پیمانوں کے مطابق شمار کیے جاتے ہیں۔ چونکہ مختلف علاقوں اور مساجد میں 3 سے 5 منٹ کا فرق ہو سکتا ہے، اس لیے باجماعت نماز اور روزے کے لیے اپنی قریبی مسجد کے اوقات کو ترجیح دیں۔"
+            question: "نماز کے انتباہی نوٹ کا کیا مطلب ہے؟",
+            answer: "یہ نوٹ یاد دہانی کراتا ہے کہ فلکیاتی حسابات میں چند منٹ کا فرق ممکن ہے، اس لیے سحری اور فجر کے وقت احتیاط برتیں۔"
           },
           {
             id: 9,
             category: "calendar",
-            question: "ہجری تاریخ شام کو مغرب کے بعد کیوں تبدیل ہو جاتی ہے؟",
-            answer: "اسلامی شریعت کے مطابق نیا اسلامی قمری دن رات 12 بجے کے بجائے <strong>غروبِ آفتاب (مغرب)</strong> سے شروع ہوتا ہے۔ Falah Islamic Post کا سسٹم اسی شرعی اصول کے تحت سورج ڈوبتے ہی اگلی ہجری تاریخ دکھاتا ہے۔"
+            question: "ہجری کیلنڈر کیسے کام کرتا ہے؟",
+            answer: "ہجری کیلنڈر فلکیاتی حسابات پر مبنی ہے اور اسلامی شریعت کے مطابق مغرب (غروب آفتاب) کے بعد خود بخود تبدیل ہو جاتا ہے۔"
           },
           {
             id: 10,
             category: "calendar",
-            question: "ہجری تاریخ ایڈجسٹمنٹ (Offset) کیا ہے؟",
-            answer: "رویتِ ہلال کے فرق کی وجہ سے برصغیر (ہند، پاک) اور خلیجی ممالک کی ہجری تاریخ میں ایک دن کا فرق ہو سکتا ہے۔ آپ سیٹنگز میں جا کر اپنی مقامی چاند کی تاریخ کے مطابق کیلنڈر سیٹ کر سکتے ہیں۔"
+            question: "ہجری تاریخ کا فرق (Offset) کیا ہے؟",
+            answer: "رویت ہلال کے فرق کی وجہ سے برصغیر اور خلیجی ممالک میں ایک دن کا فرق ہو سکتا ہے۔ آپ ڈراور سیٹنگز میں جا کر ہجری تاریخ کو اپنے علاقے کے مطابق ایڈجسٹ کر سکتے ہیں۔"
           },
           {
             id: 11,
-            category: "tools",
-            question: "اسلامی کوئز کس طرح کام کرتا ہے؟",
-            answer: "فیڈ میں دینی سوالات پوچھے جاتے ہیں۔ جیسے ہی آپ کسی جواب پر کلک کرتے ہیں، سسٹم فوری طور پر صحیح جواب کو سبز رنگ میں ظاہر کر کے اس کا حوالہ سمجھا دیتا ہے۔"
+            category: "calendar",
+            question: "انگریزی کیلنڈر میں موسمی بلاکس کیا ہیں؟",
+            answer: "یہ چار موسموں (بہار/گرما، مانسون، خزاں، سردی) کو ظاہر کرتے ہیں جس سے قمری مہینوں کے موسمی چکر کو سمجھنے میں مدد ملتی ہے۔"
           },
           {
             id: 12,
-            category: "general",
-            question: "اسپانسر / اعلانات کے کارڈز کیا ہیں؟",
-            answer: "پورٹل کو جاری رکھنے کے لیے منتخب شدہ کاروباری یا رفاہی اعلانات شامل کیے جاتے ہیں۔ ہر اسپانسر کارڈ کے نیچے رابطہ کا واٹس ایپ بٹن موجود ہوتا ہے۔"
+            category: "calendar",
+            question: "کیا میں کیلنڈر کی تاریخوں میں نوٹ شامل کر سکتا ہوں؟",
+            answer: "جی ہاں، کسی بھی تاریخ پر کلک کر کے آپ ذاتی دینی نوٹ لکھ سکتے ہیں جو صرف آپ کے موبائل میں محفوظ رہتا ہے۔"
           },
           {
             id: 13,
-            category: "technical",
-            question: "کیا Falah Islamic Post صارف کا ذاتی ڈیٹا محفوظ کرتا ہے؟",
-            answer: "<strong>ہرگز نہیں۔</strong> یہ پورٹل کلائنٹ سائیڈ پر چلتا ہے۔ آپ کے نوٹس، پسندیدہ پوسٹس اور ترجیحات صرف آپ کے اپنے موبائل کی میموری (LocalStorage) میں رہتے ہیں اور ہمارے پاس کوئی ڈیٹا منتقل نہیں ہوتا۔"
+            category: "tools",
+            question: "ڈیجیٹل تسبیح کیسے استعمال کروں؟",
+            answer: "ڈراور سے 'تسبیح' ٹول کھولیں اور گنتی بڑھانے کے لیے ٹیپ کریں۔ کاؤنٹ آپ کے براؤزر میں محفوظ رہتا ہے۔"
           },
           {
             id: 14,
-            category: "technical",
-            question: "کیا میں اسے بطور ایپ (PWA) اپنے فون پر انسٹال کر سکتا ہوں؟",
-            answer: "جی ہاں! اینڈرائیڈ پر کروم میں 'Add to Home screen' اور آئی فون پر سفاری کے شیئر بٹن سے 'Add to Home Screen' منتخب کریں۔ یہ بالکل عام موبائل ایپ کی طرح کام کرے گی۔"
+            category: "tools",
+            question: "زکوٰۃ کیلکولیٹر کیسے کام کرتا ہے؟",
+            answer: "اپنی کل رقم، سونے اور چاندی کی مالیت درج کریں اور قرض منہا کریں۔ کیلکولیٹر خود بخود نصاب اور 2.5 فیصد کے حساب سے زکوٰۃ نکال دیتا ہے۔"
           },
           {
             id: 15,
+            category: "tools",
+            question: "قبلہ سمت فائنڈر کیسے کام کرتا ہے؟",
+            answer: "قبلہ فائنڈر آپ کے ڈیوائس کے کمپاس اور GPS کی مدد سے خانہ کعبہ کی سمت بتاتا ہے۔ درست نتائج کے لیے موبائل کو مقناطیسی اشیاء سے دور رکھیں۔"
+          },
+          {
+            id: 16,
+            category: "tools",
+            question: "33 سالہ سائیکل فیچر کیا ہے؟",
+            answer: "چونکہ قمری سال شمسی سال سے تقریباً 11 دن چھوٹا ہوتا ہے، اس لیے ہر اسلامی مہینہ تقریباً 33 شمسی سالوں میں تمام موسموں کا چکر مکمل کرتا ہے۔"
+          },
+          {
+            id: 17,
             category: "technical",
-            question: "اگر موبائل کا براؤزر ڈیٹا صاف کر دیں تو کیا ہوگا؟",
-            answer: "کیونکہ تمام پسندیدہ (❤️) پوسٹس آپ کے فون کے براؤزر میں محفوظ ہوتی ہیں، اس لیے کیش یا اسٹوریج صاف کرنے پر وہ محفوظ نشانات ہٹ جائیں گے۔ بنیادی فیڈ دوبارہ لوڈ کرنے پر بحال ہو جائے گی۔"
+            question: "کیا Falah Islamic Post میرا ذاتی ڈیٹا محفوظ کرتا ہے؟",
+            answer: "نہیں۔ تمام صارف ڈیٹا آپ کے براؤزر کے لوکل اسٹوریج میں ہی رہتا ہے۔ ہمارے پاس کوئی مرکزی ڈیٹا بیس نہیں ہے جو ذاتی معلومات جمع کرے۔"
+          },
+          {
+            id: 18,
+            category: "technical",
+            question: "اگر میں براؤزر ڈیٹا صاف کروں تو کیا ہوگا؟",
+            answer: "⚠️ براؤزر کیش اور لوکل اسٹوریج صاف کرنے سے محفوظ شدہ نوٹس اور پسندیدہ پوسٹس ختم ہو جائیں گی۔ پورٹل کا عام مواد دوبارہ لوڈ ہو جائے گا۔"
+          },
+          {
+            id: 19,
+            category: "technical",
+            question: "زبان کیسے تبدیل کروں؟",
+            answer: "آپ اوپر موجود زبان کے بٹنوں کے ذریعے انگریزی، اردو، ہندی اور ہنگلش میں باآسانی سوئچ کر سکتے ہیں۔"
+          },
+          {
+            id: 20,
+            category: "technical",
+            question: "کیا میں اسے آف لائن استعمال کر سکتا ہوں؟",
+            answer: "جی ہاں! محفوظ شدہ دعائیں، نوٹس، ڈیجیٹل تسبیح، ہجری کیلنڈر اور اسٹیٹس امیج جنریٹر انٹرنیٹ کے بغیر بھی کام کرتے ہیں۔"
+          },
+          {
+            id: 21,
+            category: "technical",
+            question: "Falah Islamic Post کون سی تھرڈ پارٹی سروسز استعمال کرتا ہے؟",
+            answer: "ہم نماز کے اوقات کے لیے Aladhan API اور نقشہ کے لیے OpenStreetMap استعمال کرتے ہیں۔ ان کو صرف گمنام لوکیشن کوآرڈینیٹس بھیجے جاتے ہیں۔"
+          },
+          {
+            id: 22,
+            category: "technical",
+            question: "اگر میرا مقامی ڈیٹا ضائع ہو جائے تو کیا ہوگا؟",
+            answer: "چونکہ رازداری کی خاطر ڈیٹا سرور پر نہیں رکھا جاتا، اس لیے براؤزر صاف ہونے کے بعد نوٹس بحال نہیں کیے جا سکتے۔"
+          },
+          {
+            id: 23,
+            category: "calendar",
+            question: "اسلامی ایونٹ حب کیا ہے اور یہ کیسے کام کرتا ہے؟",
+            answer: "ایونٹ حب خودکار طریقے سے جمعہ کے دن سنن کارڈز، ایام بیض کے روزے اور رمضان کاؤنٹ ڈاؤن بغیر کسی دستی سیٹنگ کے دکھاتا ہے۔"
+          },
+          {
+            id: 24,
+            category: "calendar",
+            question: "آنے والے ایونٹس میں کیا دکھایا جاتا ہے؟",
+            answer: "عید الفطر، عید الاضحی، محرم، لیلۃ القدر اور حرمت والے مہینوں کی اہم تاریخیں واضح انداز میں دکھائی جاتی ہیں۔"
+          },
+          {
+            id: 25,
+            category: "general",
+            question: "کیا Falah Islamic Post پر اشتہارات دکھائے جاتے ہیں؟",
+            answer: "جی ہاں، پورٹل کو مفت رکھنے اور سرور کے اخراجات کے لیے تصدیق شدہ پروموشنل یا اسپانسر کارڈز دکھائے جا سکتے ہیں۔"
+          },
+          {
+            id: 26,
+            category: "general",
+            question: "اسپانسرز کے ساتھ لین دین میں کن باتوں کا خیال رکھیں؟",
+            answer: "کسی بھی اسپانسر سے آپ کا رابطہ براہ راست ہوتا ہے۔ کبھی بھی کسی کے ساتھ اپنا او ٹی پی، پاس ورڈ یا بینک تفصیلات شیئر نہ کریں۔"
+          },
+          {
+            id: 27,
+            category: "technical",
+            question: "قرآنی ڈیٹا کا ماخذ کیا ہے؟",
+            answer: "قرآنی متن اور تلاوت کے ڈیٹا کے لیے AlQuran.cloud API جیسے تصدیق شدہ اوپن سورس ذرائع استعمال کیے جاتے ہیں۔"
+          },
+          {
+            id: 28,
+            category: "technical",
+            question: "پروگریسو ویب ایپ (PWA) کیا ہے؟",
+            answer: "Falah Islamic Post ایک پی ڈبلیو اے ایپ ہے جو عام موبائل ایپ کی طرح فون میں انسٹال ہو جاتی ہے اور تیزی سے چلتی ہے۔"
+          },
+          {
+            id: 29,
+            category: "technical",
+            question: "میں اسے اپنے فون میں بطور ایپ کیسے انسٹال کروں؟",
+            answer: "اینڈرائیڈ کروم میں تین نقطوں (⋮) سے 'Add to Home screen' اور آئی فون سفاری کے شیئر بٹن سے 'Add to Home Screen' منتخب کریں۔"
+          },
+          {
+            id: 30,
+            category: "technical",
+            question: "کیا ڈیلیٹ شدہ ڈیٹا بحال ہو سکتا ہے؟",
+            answer: "نہیں۔ صارف کی رازداری کے اصول کے تحت ہم سرور پر کوئی فائل نہیں رکھتے، اس لیے ڈیلیٹ ڈیٹا واپس لانا ممکن نہیں ہوتا۔"
+          },
+          {
+            id: 31,
+            category: "tools",
+            question: "واٹس ایپ اسٹیٹس امیج جنریٹر (🖼️) کیا ہے؟",
+            answer: "ہر پوسٹ پر 🖼️ بٹن دبانے سے براؤزر کا کینوس صرف ایک سیکنڈ میں زمردی رنگ کا خوبصورت 1080x1080 ایچ ڈی کارڈ بنا دیتا ہے جو واٹس ایپ اسٹیٹس پر لگایا جا سکتا ہے۔"
+          },
+          {
+            id: 32,
+            category: "tools",
+            question: "اسلامی کوئز کیسے کام کرتا ہے؟",
+            answer: "فیڈ میں دینی سوالات آتے ہیں۔ جواب چننے پر درست آپشن فوراً سبز ہو جاتا ہے اور اس کا مستند حوالہ ظاہر ہو جاتا ہے۔"
+          },
+          {
+            id: 33,
+            category: "tools",
+            question: "جدول (Table) شیئر کرتے وقت بلٹ پوائنٹس میں کیوں بدل جاتا ہے؟",
+            answer: "واٹس ایپ میں عام ٹیبل بکھر جاتا ہے، اس لیے شیئر یا کاپی کرتے وقت سسٹم اسے خوبصورت پوائنٹس میں تبدیل کر دیتا ہے۔"
+          },
+          {
+            id: 34,
+            category: "general",
+            question: "پسندیدہ پوسٹس (Favorites ❤️) کیسے محفوظ کریں؟",
+            answer: "کسی بھی پوسٹ پر دل (❤️) کے نشان پر کلک کریں۔ وہ فوراً آپ کی سیوڈ لسٹ میں شامل ہو جائے گی جسے آپ انٹرنیٹ کے بغیر بھی پڑھ سکتے ہیں۔"
           }
         ]
       },
@@ -839,11 +1049,10 @@
         categories: {
           all: "📌 सभी",
           general: "ℹ️ सामान्य",
-          feed: "📜 पोस्ट व फ़ीड",
-          prayer: "🕌 नमाज़ व समय",
-          calendar: "📅 हिजरी कैलेंडर",
-          tools: "🛠️ टूल्स व स्टेटस",
-          technical: "💻 तकनीकी व गोपनीयता"
+          prayer: "🕌 नमाज़",
+          calendar: "📅 कैलेंडर",
+          tools: "🛠️ टूल्स",
+          technical: "💻 तकनीकी"
         },
         noResults: {
           title: "कोई परिणाम नहीं मिला",
@@ -851,94 +1060,214 @@
         },
         faqs: [
           {
+            id: 0,
+            category: "calendar",
+            question: "हिजरी तारीख शाम को सूर्यास्त के बाद क्यों बदल जाती है?",
+            answer: "<strong>इस्लामिक खगोलीय नियम:</strong><br><br>इस्लामिक चंद्र कैलेंडर में नया दिन मध्यरात्रि के बजाय <strong>मग़रिब (सूर्यास्त)</strong> से शुरू होता है।<br><br>• <strong>ऐसा क्यों होता है:</strong> इस्लामिक परंपरा के अनुसार दिन सूर्य अस्त होने से शुरू होता है।<br>• <strong>Falah का सिस्टम:</strong> Falah Islamic Post सूर्यास्त होते ही अगली हिजरी तारीख स्वचालित रूप से अपडेट कर देता है।"
+          },
+          {
             id: 1,
             category: "general",
             question: "Falah Islamic Post क्या है?",
-            answer: "Falah Islamic Post एक आधुनिक, मोबाइल-अनुकूल इस्लामिक वेब पोर्टल है जो प्रामाणिक हदीस, दैनिक दुआएं, सुन्नत के तरीके और इस्लामी शिक्षाओं को साझा करता है। इसमें नमाज़ का समय, हिजरी कैलेंडर और व्हाट्सएप स्टेटस कार्ड बनाने के टूल्स शामिल हैं।"
+            answer: "Falah Islamic Post एक संपूर्ण इस्लामिक उपयोगिता पोर्टल और दैनिक दीनी फ़ीड है जो नमाज़ का समय, हिजरी कैलेंडर, किबला दिशा, कुरान रीडर, डिजिटल तस्बीह, ज़कात कैलकुलेटर, दैनिक दुआएं, हदीस, इस्लामिक क्विज़ और स्टेटस कार्ड मेकर प्रदान करता है।"
           },
           {
             id: 2,
             category: "general",
-            question: "क्या Falah Islamic Post उपयोग के लिए निःशुल्क है?",
-            answer: "✅ हाँ, Falah Islamic Post पूरी तरह से मुफ़्त है। इसमें कोई छुपा हुआ शुल्क, सदस्यता या पंजीकरण की आवश्यकता नहीं है।"
+            question: "क्या Falah Islamic Post मुफ्त है?",
+            answer: "✅ हाँ, Falah Islamic Post पूरी तरह से मुफ़्त है। कोई छुपा हुआ शुल्क, सदस्यता या प्रीमियम शुल्क नहीं है।"
           },
           {
             id: 3,
             category: "general",
-            question: "क्या मुझे कोई खाता या आईडी बनाने की आवश्यकता है?",
-            answer: "नहीं, आपको किसी खाते की आवश्यकता नहीं है। पोर्टल खोलते ही आप सभी पोस्ट, टूल्स और इस्लामिक सामग्री का तुरंत लाभ उठा सकते हैं।"
+            question: "क्या मुझे खाता बनाने की आवश्यकता है?",
+            answer: "नहीं, खाता बनाने की कोई आवश्यकता नहीं है। सारा डेटा आपके ब्राउज़र में ही सुरक्षित रहता है।"
           },
           {
             id: 4,
-            category: "feed",
-            question: "फ़ीड में सामग्री को कैसे वर्गीकृत किया गया है?",
-            answer: "पोस्ट्स को अलग-अलग श्रेणियों में बांटा गया है: <strong>हदीस</strong>, <strong>दुआ</strong>, <strong>रोज़मर्रा</strong> (दैनिक शिष्टाचार), <strong>मसाइल</strong> और <strong>अक़वाल</strong>। आप शीर्ष पर दिए गए किसी भी बटन पर क्लिक करके विषयवार पोस्ट देख सकते हैं।"
+            category: "general",
+            question: "क्या मैं इसे अपने मोबाइल फोन पर उपयोग कर सकता हूँ?",
+            answer: "हाँ, यह स्मार्टफोन, टैबलेट और कंप्यूटर सभी पर आसानी से और तेजी से काम करता है।"
           },
           {
             id: 5,
-            category: "feed",
-            question: "पसंदीदा (❤️) बटन कैसे काम करता है?",
-            answer: "किसी भी पोस्ट पर दिल (❤️) के निशान पर क्लिक करने से वह पोस्ट आपके मोबाइल ब्राउज़र के लोकल स्टोरेज में सहेज ली जाती है। आप बिना इंटरनेट के भी 'Saved' टैब में जाकर अपनी पसंदीदा पोस्ट पढ़ सकते हैं।"
+            category: "prayer",
+            question: "नमाज़ के समय कितने सटीक हैं?",
+            answer: "नमाज़ के समय Aladhan API के खगोलीय एल्गोरिदम द्वारा निकाले जाते हैं। स्थानीय मस्जिद से 4-5 मिनट का अंतर संभव है, इसलिए जमाअत की नमाज़ के लिए अपनी मस्जिद के समय की पुष्टि करें।"
           },
           {
             id: 6,
-            category: "tools",
-            question: "व्हाट्सएप स्टेटस इमेज कार्ड जनरेटर (🖼️) क्या है?",
-            answer: "प्रत्येक पोस्ट के नीचे एक इमेज आइकन (🖼️) दिया गया है। इस पर टैप करते ही ब्राउज़र का इन-बिल्ट कैनवास सिस्टम बिना किसी बाहरी सर्वर के केवल 1 सेकंड में उस पोस्ट का 1080x1080 आकार का सुंदर स्टेटस कार्ड तैयार कर देता है जिसे आप डाउनलोड करके व्हाट्सएप स्टेटस पर लगा सकते हैं।"
+            category: "prayer",
+            question: "नमाज़ के समय के लिए स्थान कैसे बदलूं?",
+            answer: "नमाज़ कार्ड या ड्रॉअर में 'बदलें / GPS' बटन पर क्लिक करके जीपीएस अनुमति दें या मैन्युअल शहर का नाम दर्ज करें।"
           },
           {
             id: 7,
-            category: "feed",
-            question: "तालिका (Table) व्हाट्सएप पर शेयर करते समय क्यों बदल जाती है?",
-            answer: "वेबसाइट की टेबल व्हाट्सएप मैसेज में ठीक नहीं दिखती। इसलिए Falah Islamic Post कॉपी या शेयर करते समय टेबल को सुंदर बुलेट पॉइंट्स और बोल्ड शीर्षकों में बदल देता है ताकि पढ़ने वाले को आसानी हो।"
+            category: "prayer",
+            question: "'सक्रिय नमाज़' हाइलाइट क्या है?",
+            answer: "सक्रिय नमाज़ हाइलाइट वर्तमान समय के अनुसार चल रही नमाज़ को दिखाता है और दिनभर खुद-ब-खुद अपडेट होता रहता है।"
           },
           {
             id: 8,
             category: "prayer",
-            question: "नमाज़ के समय की गणना कैसे की जाती है?",
-            answer: "नमाज़ के समय की गणना मानक खगोलीय सिद्धांतों पर आधारित है। स्थानीय भौगोलिक स्थिति और मस्जिदों के समय में 3 से 5 मिनट का अंतर संभव है, इसलिए जमात की नमाज़ के लिए अपनी स्थानीय मस्जिद के समय को प्राथमिकता दें।"
+            question: "नमाज़ चेतावनी नोट का क्या मतलब है?",
+            answer: "यह नोट याद दिलाता है कि खगोलीय गणनाओं में कुछ मिनट का अंतर हो सकता है, इसलिए सहरी और फ़ज्र के समय थोड़ी एहतियात रखें।"
           },
           {
             id: 9,
             category: "calendar",
-            question: "हिजरी तारीख शाम को सूर्यास्त (मग़रिब) के बाद क्यों बदलती है?",
-            answer: "इस्लामी नियमों के अनुसार नया चंद्र दिवस मध्यरात्रि 12:00 बजे के बजाय <strong>सूर्यास्त (मग़रिब)</strong> से शुरू होता है। Falah Islamic Post इसी नियम का पालन करता है और सूर्यास्त होते ही अगली हिजरी तारीख दिखाता है।"
+            question: "हिजरी कैलेंडर कैसे काम करता है?",
+            answer: "हिजरी कैलेंडर इस्लामी शरीयत के अनुसार मग़रिब (सूर्यास्त) के बाद अपने आप अगली तारीख में बदल जाता है।"
           },
           {
             id: 10,
             category: "calendar",
             question: "हिजरी तारीख ऑफसेट क्या है?",
-            answer: "चांद दिखने के अंतर के कारण अलग-अलग देशों में हिजरी तारीख में 1 दिन का अंतर हो सकता है। आप सेटिंग्स ड्रॉअर में जाकर अपनी स्थानीय तारीख के अनुसार ऑफसेट सेट कर सकते हैं।"
+            answer: "चांद दिखने के अंतर के कारण अलग-अलग देशों में 1 दिन का अंतर हो सकता है। आप सेटिंग्स में जाकर अपने क्षेत्र के अनुसार हिजरी तारीख को सुधार सकते हैं।"
           },
           {
             id: 11,
-            category: "tools",
-            question: "इंटरैक्टिव इस्लामिक क्विज़ कैसे काम करता है?",
-            answer: "फ़ीड में ज्ञानवर्धक सवाल पूछे जाते हैं। विकल्प चुनते ही सही उत्तर तुरंत हरे रंग में हाइलाइट हो जाता है और संदर्भ भी दिखाई देता है।"
+            category: "calendar",
+            question: "अंग्रेज़ी कैलेंडर में मौसमी ब्लॉक क्या हैं?",
+            answer: "ये चार मौसम दिखाते हैं जिससे हिजरी महीनों के मौसमी बदलाव को समझना आसान होता है।"
           },
           {
             id: 12,
-            category: "general",
-            question: "प्रायोजक / विज्ञापन कार्ड क्या हैं?",
-            answer: "पोर्टल के संचालन को जारी रखने के लिए विश्वसनीय स्थानीय या सामुदायिक प्रचार कार्ड प्रदर्शित किए जा सकते हैं। इनमें सीधे व्हाट्सएप या ईमेल से संपर्क का विकल्प दिया जाता है।"
+            category: "calendar",
+            question: "क्या मैं कैलेंडर की तारीखों में नोट जोड़ सकता हूँ?",
+            answer: "हाँ, किसी भी तारीख पर क्लिक करके आप अपना निजी दीनी नोट सहेज सकते हैं जो आपके फ़ोन में सुरक्षित रहता है।"
           },
           {
             id: 13,
-            category: "technical",
-            question: "क्या Falah Islamic Post मेरा व्यक्तिगत डेटा सुरक्षित रखता है?",
-            answer: "<strong>हाँ।</strong> पोर्टल पूरी तरह से क्लाइंट-साइड काम करता है। आपका डेटा, पसंदीदा पोस्ट और नोट्स केवल आपके अपने डिवाइस के ब्राउज़र में रहते हैं। हम कोई व्यक्तिगत डेटा सर्वर पर एकत्र नहीं करते।"
+            category: "tools",
+            question: "डिजिटल तस्बीह का उपयोग कैसे करूँ?",
+            answer: "ड्रॉअर से 'तस्बीह' टूल खोलें और गिनती बढ़ाने के लिए टैप करें। आपकी गिनती फ़ोन में सुरक्षित रहती है।"
           },
           {
             id: 14,
-            category: "technical",
-            question: "क्या मैं इसे ऐप (PWA) की तरह इंस्टॉल कर सकता हूँ?",
-            answer: "हाँ! एंड्रॉइड पर क्रोम मेनू में जाकर 'Add to Home screen' और आईफोन पर सफारी शेयर मेनू से 'Add to Home Screen' चुनें। यह बिना ऐप स्टोर के सीधी ऐप की तरह चलेगी।"
+            category: "tools",
+            question: "ज़कात कैलकुलेटर कैसे काम करता है?",
+            answer: "अपनी बचत, सोना, चांदी दर्ज करें और कर्ज घटाएं। कैलकुलेटर 2.5% की दर से आपकी देय ज़कात निकाल देगा।"
           },
           {
             id: 15,
+            category: "tools",
+            question: "किबला दिशा फाइंडर कैसे काम करता है?",
+            answer: "किबला फाइंडर आपके डिवाइस के कम्पास और GPS से काबा की दिशा दिखाता है। सटीक परिणाम के लिए फोन को चुंबक से दूर रखें।"
+          },
+          {
+            id: 16,
+            category: "tools",
+            question: "33-साल साइकिल फीचर क्या है?",
+            answer: "चंद्र वर्ष सौर वर्ष से लगभग 11 दिन छोटा होता है, इसलिए हर हिजरी महीना लगभग 33 वर्षों में सभी मौसमों का चक्र पूरा करता है।"
+          },
+          {
+            id: 17,
             category: "technical",
-            question: "ब्राउज़र डेटा साफ़ करने पर क्या होगा?",
-            answer: "क्योंकि सहेजी गई पसंदीदा पोस्ट्स केवल आपके स्थानीय ब्राउज़र मेमोरी में रहती हैं, ब्राउज़र डेटा क्लियर करने पर वे रीसेट हो जाएंगी।"
+            question: "क्या Falah Islamic Post मेरा व्यक्तिगत डेटा संग्रहीत करता है?",
+            answer: "नहीं। सारा डेटा आपके ब्राउज़र के लोकल स्टोरेज में ही रहता है। हम सर्वर पर कोई डेटा एकत्र नहीं करते।"
+          },
+          {
+            id: 18,
+            category: "technical",
+            question: "अगर मैं अपना ब्राउज़र डेटा साफ़ करूँ तो क्या होगा?",
+            answer: "⚠️ ब्राउज़र डेटा साफ़ करने से सहेजे गए नोट्स और पसंदीदा पोस्ट हट जाएंगे। वेबसाइट की मूल सामग्री दोबारा लोड हो जाएगी।"
+          },
+          {
+            id: 19,
+            category: "technical",
+            question: "भाषा कैसे बदलूं?",
+            answer: "आप शीर्ष पर दिए गए बटनों से अंग्रेज़ी, उर्दू, हिंदी और हिंगलिश के बीच आसानी से बदल सकते हैं।"
+          },
+          {
+            id: 20,
+            category: "technical",
+            question: "क्या मैं इसे ऑफलाइन उपयोग कर सकता हूँ?",
+            answer: "हाँ! सहेजे गए नोट्स, तस्बीह, हिजरी कैलेंडर और स्टेटस कार्ड जनरेटर बिना इंटरनेट के भी काम करते हैं।"
+          },
+          {
+            id: 21,
+            category: "technical",
+            question: "Falah किन तृतीय-पक्ष सेवाओं का उपयोग करता है?",
+            answer: "हम नमाज़ के समय के लिए Aladhan API और मानचित्र के लिए OpenStreetMap का उपयोग करते हैं जो पूरी तरह से अनाम रहते हैं।"
+          },
+          {
+            id: 22,
+            category: "technical",
+            question: "अगर मेरा स्थानीय रूप से सहेजा गया डेटा खो जाए तो?",
+            answer: "चूंकि डेटा गोपनीयता के कारण सर्वर पर नहीं रहता, इसलिए ब्राउज़र साफ़ होने के बाद इसे दोबारा प्राप्त नहीं किया जा सकता।"
+          },
+          {
+            id: 23,
+            category: "calendar",
+            question: "इस्लामिक इवेंट हब क्या है और यह कैसे काम करता है?",
+            answer: "इवेंट हब जुम्मा के दिन सुन्नत कार्ड, अय्याम-ए-बीज़ रोज़े और रमज़ान काउंटडाउन अपने आप दिखाता है।"
+          },
+          {
+            id: 24,
+            category: "calendar",
+            question: "आगामी इवेंट्स में कौन से इवेंट्स दिखाए जाते हैं?",
+            answer: "ईद-उल-फ़ितर, ईद-उल-अज़हा, आशूरा, शब-ए-क़द्र और हुरमत वाले महीनों की प्रमुख तिथियां प्रदर्शित होती हैं।"
+          },
+          {
+            id: 25,
+            category: "general",
+            question: "क्या Falah Islamic Post विज्ञापन दिखाता है?",
+            answer: "हाँ, पोर्टल को निःशुल्क बनाए रखने और सर्वर खर्चों के लिए सत्यापित सामुदायिक या प्रायोजक कार्ड दिखाए जा सकते हैं।"
+          },
+          {
+            id: 26,
+            category: "general",
+            question: "प्रायोजकों के साथ बातचीत में क्या सावधानियां बरतें?",
+            answer: "लेन-देन सीधे आपके और विक्रेता के बीच होता है। कभी भी किसी के साथ बैंक ओटीपी, पासवर्ड या गोपनीय जानकारी साझा न करें।"
+          },
+          {
+            id: 27,
+            category: "technical",
+            question: "कुरानिक डेटा का स्रोत क्या है?",
+            answer: "कुरानिक पाठ और अनुवाद के लिए AlQuran.cloud API जैसे सत्यापित स्रोतों का उपयोग किया जाता है।"
+          },
+          {
+            id: 28,
+            category: "technical",
+            question: "प्रोग्रेसिव वेब ऐप (PWA) क्या है?",
+            answer: "यह तकनीक वेबसाइट को मोबाइल ऐप की तरह इंस्टॉल करने और तेज़ी से लोड होने की सुविधा देती है।"
+          },
+          {
+            id: 29,
+            category: "technical",
+            question: "मैं इसे अपने डिवाइस पर PWA के रूप में कैसे इंस्टॉल करूं?",
+            answer: "एंड्रॉइड क्रोम में तीन बिंदुओं (⋮) से 'Add to Home screen' और आईफोन सफारी शेयर मेनू से 'Add to Home Screen' चुनें।"
+          },
+          {
+            id: 30,
+            category: "technical",
+            question: "क्या डिलीट किया गया डेटा पुनर्प्राप्त हो सकता है?",
+            answer: "नहीं। गोपनीयता के कारण हम सर्वर पर बैकअप नहीं रखते, इसलिए डिलीट डेटा वापस लाना संभव नहीं है।"
+          },
+          {
+            id: 31,
+            category: "tools",
+            question: "व्हाट्सएप स्टेटस इमेज कार्ड जनरेटर (🖼️) क्या है?",
+            answer: "किसी भी पोस्ट पर 🖼️ बटन दबाते ही 1 सेकंड में 1080x1080 आकार का सुंदर स्टेटस कार्ड बन जाता है जिसे आप डाउनलोड करके व्हाट्सएप स्टेटस पर लगा सकते हैं।"
+          },
+          {
+            id: 32,
+            category: "tools",
+            question: "इंटरैक्टिव इस्लामिक क्विज़ कैसे काम करता है?",
+            answer: "फ़ीड में ज्ञानवर्धक सवाल आते हैं। विकल्प चुनते ही सही उत्तर तुरंत हरे रंग में हाइलाइट हो जाता है और संदर्भ भी दिखाई देता है।"
+          },
+          {
+            id: 33,
+            category: "tools",
+            question: "तालिका (Table) शेयर करते समय बुलेट पॉइंट्स में क्यों बदलती है?",
+            answer: "व्हाट्सएप चैट में टेबल खराब न दिखे, इसलिए शेयर या कॉपी करते समय सिस्टम तालिका को साफ बुलेट पॉइंट्स में बदल देता है।"
+          },
+          {
+            id: 34,
+            category: "general",
+            question: "पसंदीदा पोस्ट (Favorites ❤️) कैसे सहेजें?",
+            answer: "किसी भी पोस्ट पर दिल (❤️) के निशान पर क्लिक करें। वह तुरंत आपकी सहेजी गई सूची में आ जाएगी जिसे आप ऑफलाइन भी पढ़ सकते हैं।"
           }
         ]
       },
@@ -953,11 +1282,10 @@
         categories: {
           all: "📌 Sabhi",
           general: "ℹ️ Aam",
-          feed: "📜 Posts & Feed",
-          prayer: "🕌 Namaz & Waqt",
-          calendar: "📅 Hijri Calendar",
-          tools: "🛠️ Tools & Status",
-          technical: "💻 Technical & Privacy"
+          prayer: "🕌 Namaz",
+          calendar: "📅 Calendar",
+          tools: "🛠️ Tools",
+          technical: "💻 Technical"
         },
         noResults: {
           title: "Koi result nahi mila",
@@ -965,99 +1293,220 @@
         },
         faqs: [
           {
+            id: 0,
+            category: "calendar",
+            question: "Hijri date shaam ko sunset ke baad kyun badal jaati hai?",
+            answer: "<strong>Islamic Astronomical Rule:</strong><br><br>Islamic lunar calendar mein naya din midnight (12:00 AM) ke bajaye <strong>Maghrib (Sunset)</strong> se shuru hota hai.<br><br>• <strong>Aisa kyun hota hai:</strong> Islamic tradition ke mutabiq din suraj ke ghuroob hone se shuru hota hai.<br>• <strong>Falah ka system:</strong> Falah Islamic Post sunset hote hi Hijri date ko automatically agle din par update kar deta hai bina kisi manual setting ke."
+          },
+          {
             id: 1,
             category: "general",
             question: "Falah Islamic Post kya hai?",
-            answer: "Falah Islamic Post ek modern, mobile-friendly Islamic web portal hai jo authentic Hadees, daily Duas, Sunnah tareeqe aur deeni paigamat ko aam karne ke liye banaya gaya hai. Isme namaz ke auqaat, Hijri calendar aur WhatsApp status image maker jaise mufeed tools maujood hain."
+            answer: "Falah Islamic Post ek all-in-one Islamic utility portal aur deeni feed hai jo namaz ke auqaat, Hijri calendar, Qibla direction, Quran reader, digital tasbeeh, Zakat calculator, daily duas, authentic hadees, deeni quiz aur WhatsApp status image maker provide karta hai."
           },
           {
             id: 2,
             category: "general",
-            question: "Kya Falah Islamic Post use karna free hai?",
-            answer: "✅ Haan, Falah Islamic Post poori Ummah ke liye 100% bilkul free hai. Isme koi registration fee, subscription ya hidden charges nahi hain."
+            question: "Kya Falah Islamic Post free hai?",
+            answer: "✅ Haan, Falah Islamic Post poori Ummah ke liye bilkul free hai. Koi hidden charges, subscription ya premium fees nahi hain."
           },
           {
             id: 3,
             category: "general",
-            question: "Kya mujhe account ya login banane ki zaroorat hai?",
-            answer: "Nahi, kisi tarah ke login ya account ki zaroorat nahi hai. Aap website open karte hi direct tamaam deeni posts, hadees aur tools use kar sakte hain."
+            question: "Kya mujhe account banane ki zaroorat hai?",
+            answer: "Nahi, account banane ki koi zaroorat nahi hai. Aapki saari preferences aur saved bookmarks aapke mobile browser me locally save hote hain."
           },
           {
             id: 4,
-            category: "feed",
-            question: "Feed me posts ki category kaise baanti gayi hai?",
-            answer: "Posts ko asaan tabs me categorize kiya gaya hai: <strong>Hadees</strong>, <strong>Dua</strong>, <strong>Roze Marra</strong>, <strong>Masail</strong> aur <strong>Aqwal</strong>. Aap page ke upar kisi bhi category pill par click karke wahi post filter kar sakte hain."
+            category: "general",
+            question: "Kya main ise apne mobile phone par use kar sakta hoon?",
+            answer: "Haan, ye mobile-first design ke saath smartphones, tablets aur computer par bilkul fast aur smooth chalta hai."
           },
           {
             id: 5,
-            category: "feed",
-            question: "Favorite / Save (❤️) button kaise kaam karta hai?",
-            answer: "Kisi bhi post ke neeche dil (❤️) par tap karte hi wo post aapke mobile browser ki memory (LocalStorage) me save ho jati hai. Aap offline reh kar bhi 'Saved' tab me jakar apni manpasand posts padh sakte hain."
+            category: "prayer",
+            question: "Prayer times kitne accurate hain?",
+            answer: "Prayer times Aladhan API ke astronomical calculations par based hain. Local masjid ke waqt me 4-5 minute ka farq ho sakta hai, isliye jama'at ki namaz aur roze ke liye apni qareebi masjid ke time table ko follow karein."
           },
           {
             id: 6,
-            category: "tools",
-            question: "WhatsApp Status Image Card Generator (🖼️) kya hai?",
-            answer: "Har post ke footer me image icon (🖼️) diya gaya hai. Us par click karte hi browser ka Canvas engine bina kisi server ke sirf 1 second me us post ko ek khoobsurat 1080x1080 square poster me convert kar deta hai, jise aap direct apne WhatsApp status par laga sakte hain."
+            category: "prayer",
+            question: "Prayer times ke liye location kaise change karoon?",
+            answer: "Prayer card ya drawer me 'Change / GPS' button par tap karke auto GPS detect karein ya manually apne shahar ka naam search karein."
           },
           {
             id: 7,
-            category: "feed",
-            question: "Table WhatsApp par share karte waqt badal kyun jata hai?",
-            answer: "Computer table WhatsApp chat me theek nahi dikhta. Isliye Falah Islamic Post ka script copy ya share karte waqt us table ko neat bullet points aur bold headings me badal deta hai taaki paigam saaf padha ja sake."
+            category: "prayer",
+            question: "'Active prayer' highlight kya hai?",
+            answer: "Active prayer highlight current waqt ke mutabiq chal rahi namaz ko highlight karta hai aur agle waqt aate hi khud update ho jata hai."
           },
           {
             id: 8,
             category: "prayer",
-            question: "Namaz ke auqaat kaise calculate hote hain?",
-            answer: "Namaz ke waqt astronomical calculation ke mutabiq nikaale jaate hain. Local masjid ke waqt me 3 se 5 minute ka farq ho sakta hai, isliye jama'at ki namaz ke liye apni qareebi masjid ke time table ko follow karein."
+            question: "Prayer warning note ka kya matlab hai?",
+            answer: "Yeh note yaad dilata hai ki astronomical timings me 4-5 minute ka difference ho sakta hai, isliye Sehri khatam hone aur Fajr me ehtiyat bartein."
           },
           {
             id: 9,
             category: "calendar",
-            question: "Hijri date shaam ko Sunset (Maghrib) ke baad kyun badal jaati hai?",
-            answer: "Islamic Shariah ke mutabiq naya qamri din raat 12 baje ke bajaye <strong>Maghrib (suraj doobne)</strong> se shuru hota hai. Falah Islamic Post isi shar'i usool ke teht sunset hote hi agle din ki Hijri date dikhane lagta hai."
+            question: "Hijri calendar kaise kaam karta hai?",
+            answer: "Hijri calendar astronomical calculations par based hai aur Islamic Shariah ke mutabiq Maghrib (sunset) ke baad automatically update ho jata hai."
           },
           {
             id: 10,
             category: "calendar",
-            question: "Hijri date offset kya hota hai?",
-            answer: "Chand dekhne ke farq ki wajah se alag-alag mulkon (jaise Gulf aur India/Pakistan) ki tareekh me 1 din ka farq hota hai. Aap settings me jakar apne ilaqa ke mutabiq -1 ya 0 day offset set kar sakte hain."
+            question: "Hijri date offset kya hai?",
+            answer: "Chand dekhne ke farq ki wajah se alag alag mulkon me 1 din ka farq hota hai. Offset setting se aap apne local ilaqa ke mutabiq tareekh -1 ya 0 day set kar sakte hain."
           },
           {
             id: 11,
-            category: "tools",
-            question: "Islamic Quiz kaise kaam karta hai?",
-            answer: "Feed me deeni sawalat ke cards aate hain. Option chunne par sahi jawab foran green ho jata hai aur sawal ka shar'i hawala bhi samne aa jata hai."
+            category: "calendar",
+            question: "English calendar mein seasonal blocks kya hain?",
+            answer: "Seasonal blocks saal ke 4 mausam (Spring, Summer, Monsoon, Winter) dikhaate hain taaki qamri maheeno ke seasonal shift ko samjha ja sake."
           },
           {
             id: 12,
-            category: "general",
-            question: "Sponsor / Ad cards kya hote hain?",
-            answer: "Platform ki khidmat ko jari rakhne ke liye verified business ya community notices lagaye ja sakte hain. Har sponsor card par direct WhatsApp aur rabta ka button hota hai."
+            category: "calendar",
+            question: "Kya main calendar ki dates mein notes add kar sakta hoon?",
+            answer: "Haan, kisi bhi date par click karke personal note likh sakte hain jo aapke phone ke browser me dot indicator ke sath save rehta hai."
           },
           {
             id: 13,
-            category: "technical",
-            question: "Kya Falah Islamic Post mera personal data collect karta hai?",
-            answer: "<strong>Nahi.</strong> Yeh website 100% client-side privacy-focused hai. Aapke bookmarks, notes aur settings aapke phone ke browser me rehti hain. Hamare server par koi personal data save nahi hota."
+            category: "tools",
+            question: "Digital tasbeeh kaise use karoon?",
+            answer: "Drawer se 'Tasbeeh' tool kholein aur count badhane ke liye 'TAP COUNT' button dabayein. Aapka count phone me save rehta hai."
           },
           {
             id: 14,
-            category: "technical",
-            question: "Kya ise mobile app (PWA) ki tarah install kar sakte hain?",
-            answer: "Haan! Android par Chrome ke menu se 'Add to Home screen' aur iPhone par Safari ke Share menu se 'Add to Home Screen' select karein. Yeh bina Play Store ke native app ki tarah open hogi."
+            category: "tools",
+            question: "Zakat calculator kaise kaam karta hai?",
+            answer: "Apna cash balance, gold aur silver value dalein aur debt minus karein. Calculator 2.5% ke hisaab se payable Zakat bata dega."
           },
           {
             id: 15,
+            category: "tools",
+            question: "Qibla direction finder kaise kaam karta hai?",
+            answer: "Qibla finder device ke compass sensor aur GPS ka use karke Kaaba ki direction dikhata hai. Accurate result ke liye phone ko open area me rakhein."
+          },
+          {
+            id: 16,
+            category: "tools",
+            question: "33-Year Cycle feature kya hai?",
+            answer: "Lunar saal solar saal se ~11 din chhota hota hai, isliye har Islamic maheena lagbhag 33 saalon me har mausam ka chakkar poora karta hai."
+          },
+          {
+            id: 17,
             category: "technical",
-            question: "Agar phone ka browser data clear kardein toh kya hoga?",
-            answer: "Kyunki aapke favorite (❤️) posts phone ki memory me hote hain, browser cache clear karne par wo saved list reset ho jayegi. Asal posts website dubara kholne par wapas aa jayengi."
+            question: "Kya Falah Islamic Post mera personal data store karta hai?",
+            answer: "Nahi. Saara data aapke browser ke LocalStorage me locally store hota hai. Hamare paas koi central server nahi hai jo personal data collect kare."
+          },
+          {
+            id: 18,
+            category: "technical",
+            question: "Agar main browser data clear karoon toh kya hoga?",
+            answer: "⚠️ Browser data (cache, LocalStorage) clear karne se aapke saved notes aur favorites delete ho jayenge. Main website ka content dobara aam taur par load ho jayega."
+          },
+          {
+            id: 19,
+            category: "technical",
+            question: "Language kaise change karoon?",
+            answer: "Aap top par diye gaye buttons se English, Urdu, Hindi aur Hinglish me foran switch kar sakte hain."
+          },
+          {
+            id: 20,
+            category: "technical",
+            question: "Kya main ise offline use kar sakta hoon?",
+            answer: "Haan! Saved notes, digital tasbeeh, Hijri calendar aur WhatsApp status image maker bina internet ke bhi offline kaam karte hain."
+          },
+          {
+            id: 21,
+            category: "technical",
+            question: "Falah Islamic Post kaunsi third-party services use karta hai?",
+            answer: "Ham prayer times ke liye Aladhan API aur geocoding ke liye OpenStreetMap use karte hain jo bina kisi user ID ke anonymous data leti hain."
+          },
+          {
+            id: 22,
+            category: "technical",
+            question: "Agar mera locally saved data lost ho jaye toh kya hoga?",
+            answer: "Privacy ki wajah se data hamare server par nahi hota, isliye browser wipe hone ke baad notes recover nahi kiye ja sakte."
+          },
+          {
+            id: 23,
+            category: "calendar",
+            question: "Islamic Event Hub kya hai aur ye kaise kaam karta hai?",
+            answer: "Event hub Friday ko Jumu'ah Sunnah cards, Ayyam-e-Beez roza alert aur Ramadan countdown bina kisi manual setting ke automatically show karta hai."
+          },
+          {
+            id: 24,
+            category: "calendar",
+            question: "Upcoming Events section mein kya dikhta hai?",
+            answer: "Eid-ul-Fitr, Eid-ul-Adha, Ashura, Shab-e-Qadr, Hajj aur sacred months ki ahem Islamic dates display hoti hain."
+          },
+          {
+            id: 25,
+            category: "general",
+            question: "Kya website par advertisements aate hain?",
+            answer: "Platform ko free chalane aur server maintenance ke liye verified community notice ya sponsor cards show ho sakte hain."
+          },
+          {
+            id: 26,
+            category: "general",
+            question: "Sponsors ke sath deal karte waqt kya dhyan rakhein?",
+            answer: "Aapka transaction directly advertiser ke sath hota hai. Kabhi bhi kisi ke sath apna bank OTP, password ya confidential data share na karein."
+          },
+          {
+            id: 27,
+            category: "technical",
+            question: "Quranic data ka source kya hai?",
+            answer: "Quranic text aur metadata ke liye AlQuran.cloud API jaise verified open-source resources ka use kiya jata hai."
+          },
+          {
+            id: 28,
+            category: "technical",
+            question: "Progressive Web App (PWA) kya hai?",
+            answer: "Falah Islamic Post PWA technology use karta hai, jisse yeh bina Play Store ke direct aapke mobile me native app ki tarah install aur fast load hota hai."
+          },
+          {
+            id: 29,
+            category: "technical",
+            question: "Main ise apne device par PWA ke roop mein kaise install karoon?",
+            answer: "Android Chrome me three-dots (⋮) se 'Add to Home screen' aur iPhone Safari me Share se 'Add to Home Screen' select karein."
+          },
+          {
+            id: 30,
+            category: "technical",
+            question: "Kya delete ki gayi images ya user data recover ho sakta hai?",
+            answer: "Nahi, complete user privacy ki wajah se data hamare server par nahi hota, isliye delete hone ke baad ise recover nahi kiya ja sakta."
+          },
+          {
+            id: 31,
+            category: "tools",
+            question: "WhatsApp Status Image Card Generator (🖼️) kya hai?",
+            answer: "Har post ke niche 🖼️ icon par click karte hi browser ka Canvas engine bina kisi server ke sirf 1 second me HD 1080x1080 emerald status card bana deta hai jo direct WhatsApp status par share kiya ja sakta hai."
+          },
+          {
+            id: 32,
+            category: "tools",
+            question: "Islamic Quizzes kaise kaam karte hain?",
+            answer: "Feed me deeni sawalat ke cards aate hain. Option select karte hi sahi jawab green ho jata hai aur authentic hawala samne aa jata hai."
+          },
+          {
+            id: 33,
+            category: "tools",
+            question: "Table WhatsApp par share karte waqt badal kyun jata hai?",
+            answer: "WhatsApp chats me table toote nahi, isliye copy ya share karte waqt script use sundar bullet points aur headings me convert kar deta hai."
+          },
+          {
+            id: 34,
+            category: "general",
+            question: "Manpasand posts (Favorites ❤️) kaise save karein?",
+            answer: "Kisi bhi post par dil (❤️) par click karein. Wo aapke phone ki memory me save ho jati hai aur aap offline 'Saved' tab me jakar padh sakte hain."
           }
         ]
       }
     };
 
+    // RENDER LOGIC
     let currentLanguage = 'en';
     let currentCategory = 'all';
     let searchQuery = '';
