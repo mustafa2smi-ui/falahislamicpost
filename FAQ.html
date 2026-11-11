@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Falah Islamic Post - FAQ & Help | Frequently Asked Questions</title>
+  <meta name="description" content="Find answers to frequently asked questions about Falah Islamic Post. Learn about daily hadith feed, prayer times, Hijri calendar, WhatsApp status generator, and more.">
+  <meta name="keywords" content="Falah Islamic Post FAQ, Islamic portal help, daily hadith, prayer times, Hijri calendar, WhatsApp status card maker, Islamic quizzes">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mufliha.com/faq.html">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Falah Islamic Post - FAQ & Help">
+  <meta property="og:description" content="Frequently asked questions about Falah Islamic Post. Get help with Islamic posts, prayer times, calendar, status maker, and privacy.">
+  <meta property="og:url" content="https://mufliha.com/faq.html">
+  <meta property="og:site_name" content="Falah Islamic Post">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Falah Islamic Post - FAQ & Help">
+  <meta name="twitter:description" content="Frequently asked questions about Falah Islamic Post.">
+
+  <!-- JSON-LD Schema Markup for FAQ Page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "@id": "https://mufliha.com/faq.html#faqpage",
+        "url": "https://mufliha.com/faq.html",
+        "name": "Falah Islamic Post - FAQ & Help",
+        "description": "Frequently asked questions about Falah Islamic Post.",
+        "isPartOf": {
+          "@id": "https://mufliha.com/#website"
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Falah Islamic Post?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Falah Islamic Post is a high-performance Islamic web portal providing daily authentic Hadith, Duas, daily Islamic reminders, astronomical prayer times, dynamic Hijri calendar, interactive quizzes, and a native WhatsApp Status card maker."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Falah Islamic Post free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Falah Islamic Post is completely free to use without any financial barrier or subscription fee."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the WhatsApp Status Card Maker work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Using native client-side HTML5 Canvas, it converts any Hadith or reminder into a high-definition 1080x1080 square poster in under a second without uploading data to any external server."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Falah Islamic Post store my personal data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. All user data, including favorites and notes, is stored locally in your browser's LocalStorage. We do not maintain user databases or track personal activity."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mufliha.com/#website",
+        "url": "https://mufliha.com/",
+        "name": "Falah Islamic Post",
+        "description": "Daily Islamic Reminders, Authentic Hadith Feed, Prayer Times & Islamic Utilities"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f0f4f9;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    /* Header Styles */
+    .faq-header {
+      background: #0b1a30;
+      color: #ffffff;
+      padding: 20px 16px 14px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .header-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .brand-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .mosque-icon {
+      font-size: 1.8rem;
+    }
+
+    .brand-text h1 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+
+    .brand-text p {
+      font-size: 0.68rem;
+      color: #cbd5e1;
+    }
+
+    .back-home-btn {
+      background: rgba(255,255,255,0.15);
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .back-home-btn:hover {
+      background: rgba(255,255,255,0.25);
+    }
+
+    /* Language Switcher */
+    .language-switcher {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      padding: 6px 0 12px;
+      border-bottom: 1px solid #e2e8f0;
+      margin-bottom: 16px;
+    }
+
+    .lang-btn {
+      padding: 5px 14px;
+      border-radius: 16px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      background: #f1f5f9;
+      color: #475569;
+      border: 2px solid #e2e8f0;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .lang-btn:hover {
+      border-color: #128c7e;
+      color: #128c7e;
+      transform: translateY(-1px);
+    }
+
+    .lang-btn.active {
+      background: #128c7e;
+      color: #ffffff;
+      border-color: #128c7e;
+    }
+
+    /* Main Container */
+    .faq-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px 16px 40px;
+    }
+
+    /* Header Section */
+    .faq-hero {
+      text-align: center;
+      padding: 20px 0 30px;
+    }
+
+    .faq-hero h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #0b1a30;
+      margin-bottom: 8px;
+    }
+
+    .faq-hero p {
+      font-size: 0.95rem;
+      color: #64748b;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    /* Search Box */
+    .faq-search-box {
+      max-width: 500px;
+      margin: 0 auto 30px;
+      position: relative;
+    }
+
+    .faq-search-box input {
+      width: 100%;
+      padding: 12px 18px 12px 44px;
+      border-radius: 30px;
+      border: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+      background: #ffffff;
+      transition: border-color 0.3s ease;
+      outline: none;
+    }
+
+    .faq-search-box input:focus {
+      border-color: #128c7e;
+    }
+
+    .faq-search-box .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.1rem;
+      color: #94a3b8;
+    }
+
+    .faq-search-box .clear-search {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 1.1rem;
+      color: #94a3b8;
+      cursor: pointer;
+      display: none;
+    }
+
+    .faq-search-box .clear-search.visible {
+      display: block;
+    }
+
+    /* Category Tabs */
+    .faq-categories {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 0 0 20px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      flex-wrap: nowrap;
+    }
+
+    .faq-categories::-webkit-scrollbar {
+      display: none;
+    }
+
+    .faq-cat-btn {
+      flex: 0 0 auto;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: #f1f5f9;
+      color: #475569;
+      border: 2px solid #e2e8f0;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .faq-cat-btn:hover {
+      border-color: #128c7e;
+      color: #128c7e;
+    }
+
+    .faq-cat-btn.active {
+      background: #128c7e;
+      color: #ffffff;
+      border-color: #128c7e;
+    }
+
+    /* FAQ Accordion */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border-radius: 12px;
+      border: 1.5px solid #e2e8f0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+
+    .faq-item:hover {
+      border-color: #cbd5e1;
+    }
+
+    .faq-question {
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      background: #ffffff;
+      transition: background 0.2s ease;
+      gap: 12px;
+    }
+
+    .faq-question:hover {
+      background: #f8fafc;
+    }
+
+    .faq-question .q-text {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #0f172a;
+      flex: 1;
+    }
+
+    .faq-question .q-number {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #94a3b8;
+      background: #f1f5f9;
+      padding: 2px 8px;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+
+    .faq-question .toggle-icon {
+      font-size: 1.2rem;
+      color: #94a3b8;
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-question.open .toggle-icon {
+      transform: rotate(180deg);
+      color: #128c7e;
+    }
+
+    .faq-answer {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+
+    .faq-answer.open {
+      padding: 0 20px 16px;
+      max-height: 600px;
+    }
+
+    .faq-answer p {
+      font-size: 0.88rem;
+      color: #475569;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    /* No Results */
+    .no-results {
+      text-align: center;
+      padding: 40px 20px;
+      display: none;
+    }
+
+    .no-results.visible {
+      display: block;
+    }
+
+    .no-results .icon {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+
+    .no-results h3 {
+      font-size: 1.1rem;
+      color: #1e293b;
+      margin-bottom: 4px;
+    }
+
+    .no-results p {
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    /* Footer */
+    .faq-footer {
+      text-align: center;
+      padding: 24px 16px;
+      border-top: 1px solid #e2e8f0;
+      margin-top: 30px;
+    }
+
+    .faq-footer p {
+      font-size: 0.78rem;
+      color: #94a3b8;
+    }
+
+    .faq-footer .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .faq-footer .footer-links a {
+      color: #64748b;
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .faq-footer .footer-links a:hover {
+      color: #128c7e;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .faq-hero h2 {
+        font-size: 1.5rem;
+      }
+      .faq-hero p {
+        font-size: 0.85rem;
+      }
+      .faq-question {
+        padding: 12px 16px;
+      }
+      .faq-question .q-text {
+        font-size: 0.85rem;
+      }
+      .faq-answer {
+        padding: 0 16px;
+      }
+      .faq-answer.open {
+        padding: 0 16px 12px;
+      }
+      .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .back-home-btn {
+        align-self: flex-start;
+      }
+      .language-switcher {
+        gap: 4px;
+      }
+      .lang-btn {
+        padding: 4px 10px;
+        font-size: 0.65rem;
+      }
+      .faq-categories {
+        gap: 6px;
+      }
+      .faq-cat-btn {
+        padding: 5px 12px;
+        font-size: 0.7rem;
+      }
+    }
+
+    /* Print Styles */
+    @media print {
+      .faq-header, .language-switcher, .faq-search-box, .faq-categories, .faq-footer, .back-home-btn {
+        display: none !important;
+      }
+      .faq-item {
+        border: 1px solid #e2e8f0 !important;
+        break-inside: avoid;
+      }
+      .faq-answer {
+        max-height: none !important;
+        padding: 0 20px 12px !important;
+        display: block !important;
+      }
+      body {
+        background: white !important;
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="faq-header">
+    <div class="header-content">
+      <div class="brand-section">
+        <div class="mosque-icon">🕌</div>
+        <div class="brand-text">
+          <h1>Falah Islamic Post</h1>
+          <p>Sharing Ilm, Inspiring the Ummah</p>
+        </div>
+      </div>
+      <a href="index.html" class="back-home-btn">🏠 Back to Portal</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="faq-container">
+
+    <!-- Language Switcher -->
+    <div class="language-switcher" id="languageSwitcher">
+      <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">🇬🇧 English</button>
+      <button class="lang-btn" data-lang="ur" onclick="switchLanguage('ur')">🇵🇰 اردو</button>
+      <button class="lang-btn" data-lang="hi" onclick="switchLanguage('hi')">🇮🇳 हिन्दी</button>
+      <button class="lang-btn" data-lang="hinglish" onclick="switchLanguage('hinglish')">🇮🇳 Hinglish</button>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="faq-hero">
+      <h2 id="heroTitle">❓ Frequently Asked Questions</h2>
+      <p id="heroSub">Find answers to common questions about Falah Islamic Post. If you can't find what you're looking for, <a href="legal.html#contact">contact us</a>.</p>
+    </div>
+
+    <!-- Search Box -->
+    <div class="faq-search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="faqSearchInput" placeholder="Search questions..." oninput="searchFaq()">
+      <button class="clear-search" id="clearSearch" onclick="clearSearch()">✕</button>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="faq-categories" id="faqCategories">
+      <button class="faq-cat-btn active" data-cat="all" onclick="filterCategory('all', this)">📌 All</button>
+      <button class="faq-cat-btn" data-cat="general" onclick="filterCategory('general', this)">ℹ️ General</button>
+      <button class="faq-cat-btn" data-cat="feed" onclick="filterCategory('feed', this)">📜 Posts & Feed</button>
+      <button class="faq-cat-btn" data-cat="prayer" onclick="filterCategory('prayer', this)">🕌 Prayer & Time</button>
+      <button class="faq-cat-btn" data-cat="calendar" onclick="filterCategory('calendar', this)">📅 Hijri Calendar</button>
+      <button class="faq-cat-btn" data-cat="tools" onclick="filterCategory('tools', this)">🛠️ Tools & Status</button>
+      <button class="faq-cat-btn" data-cat="technical" onclick="filterCategory('technical', this)">💻 Technical & Privacy</button>
+    </div>
+
+    <!-- FAQ List -->
+    <div id="faqList" class="faq-list"></div>
+
+    <!-- No Results -->
+    <div class="no-results" id="noResults">
+      <div class="icon">🔍</div>
+      <h3>No results found</h3>
+      <p>Try adjusting your search terms or browse the categories above.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="faq-footer">
+      <p>&copy; 2026 <strong>Falah Islamic Post</strong>. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="legal.html#about">About</a>
+        <a href="legal.html#privacy">Privacy Policy</a>
+        <a href="legal.html#terms">Terms & Conditions</a>
+        <a href="legal.html#disclaimer">Disclaimer</a>
+        <a href="legal.html#contact">Contact</a>
+        <a href="index.html">🏠 Portal Feed</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- JAVASCRIPT LOGIC & CONTENT -->
+  <script>
+    const faqContent = {
+
+      // ==============================================================
+      // ENGLISH
+      // ==============================================================
+      en: {
+        heroTitle: "❓ Frequently Asked Questions",
+        heroSub: "Find answers to common questions about Falah Islamic Post. If you can't find what you're looking for, <a href='legal.html#contact'>contact us</a>.",
+        searchPlaceholder: "Search questions...",
+        categories: {
+          all: "📌 All",
+          general: "ℹ️ General",
+          feed: "📜 Posts & Feed",
+          prayer: "🕌 Prayer & Time",
+          calendar: "📅 Hijri Calendar",
+          tools: "🛠️ Tools & Status",
+          technical: "💻 Technical & Privacy"
+        },
+        noResults: {
+          title: "No results found",
+          sub: "Try adjusting your search terms or browse the categories above."
+        },
+        faqs: [
+          {
+            id: 1,
+            category: "general",
+            question: "What is Falah Islamic Post?",
+            answer: "Falah Islamic Post is a dedicated, mobile-friendly Islamic web portal designed to share authentic Islamic knowledge, daily Duas, Quranic reflections, Sunnah practices, and verified Hadiths. It combines modern web capabilities with traditional Islamic learning, featuring prayer times, Hijri calculations, and visual sharing tools."
+          },
+          {
+            id: 2,
+            category: "general",
+            question: "Is Falah Islamic Post free to use?",
+            answer: "✅ Yes, Falah Islamic Post is 100% free and open for the entire Ummah. There are no subscriptions, registration requirements, or paywalls."
+          },
+          {
+            id: 3,
+            category: "general",
+            question: "Do I need to sign up or create an account?",
+            answer: "No account is required. You can access all posts, interactive quizzes, calendar tools, and image status generators immediately upon opening the website."
+          },
+          {
+            id: 4,
+            category: "feed",
+            question: "How is content categorized on the feed?",
+            answer: "Posts are neatly sorted under distinct category pills: <strong>Hadees</strong> (Prophetic traditions), <strong>Dua</strong> (supplications), <strong>Roze Marra</strong> (daily lifestyle & etiquettes), <strong>Masail</strong> (practical guidance), and <strong>Aqwal</strong> (quotes of wisdom). You can tap any category button at the top to filter the feed."
+          },
+          {
+            id: 5,
+            category: "feed",
+            question: "How does the Favorite (❤️) button work?",
+            answer: "Tapping the heart icon on any post saves it directly into your device's browser memory (LocalStorage). You can view your saved items anytime by clicking the 'Saved' filter tab, even without an active internet connection."
+          },
+          {
+            id: 6,
+            category: "tools",
+            question: "What is the WhatsApp Status Image Card Generator (🖼️)?",
+            answer: "Next to each post, there is an image icon (🖼️). Clicking it uses your browser's built-in Canvas engine to transform that post into an elegant, high-resolution (1080x1080) Islamic card featuring an emerald background and golden borders, ready to be saved and shared directly to your WhatsApp Status or Instagram story."
+          },
+          {
+            id: 7,
+            category: "feed",
+            question: "Why do comparison tables look different when shared to WhatsApp?",
+            answer: "Web tables do not format cleanly on messaging apps. Falah Islamic Post automatically parses comparison tables into clean, structured bullet lists with bold headings when you tap Copy (📋) or Share (↗), ensuring recipients receive a beautifully formatted WhatsApp message."
+          },
+          {
+            id: 8,
+            category: "prayer",
+            question: "How are Salah (Prayer) times calculated?",
+            answer: "Prayer times are computed using standard astronomical calculations. Because local mosque timings may vary slightly by 3 to 5 minutes based on geographical elevation and juristic methods (Hanafi/Shafi'i), we recommend verifying with your local congregation for congregational prayers."
+          },
+          {
+            id: 9,
+            category: "calendar",
+            question: "Why does the Hijri date advance in the evening after Sunset (Maghrib)?",
+            answer: "In Islamic sacred chronology, the lunar day begins at <strong>Maghrib (sunset)</strong> rather than 12:00 midnight. Falah Islamic Post's astronomical engine respects this rule, transitioning to the next Hijri date as soon as the sun sets."
+          },
+          {
+            id: 10,
+            category: "calendar",
+            question: "What is the Hijri Date Correction Offset?",
+            answer: "Due to local moon sightings, Islamic calendar dates may differ by 1 day between regional zones (such as Saudi Arabia/Gulf versus India/Pakistan). The portal includes an offset selector allowing you to sync the Hijri calendar precisely with your local Hilal committee announcements."
+          },
+          {
+            id: 11,
+            category: "tools",
+            question: "How do the Interactive Islamic Quizzes work?",
+            answer: "Quizzes are presented as interactive question cards in the feed. Tapping an option provides instant visual feedback—highlighting the correct answer in green while explaining the background reference, helping you test and expand your Islamic knowledge."
+          },
+          {
+            id: 12,
+            category: "general",
+            question: "What are Sponsor / Khidmat Cards?",
+            answer: "Falah Islamic Post may display vetted promotional cards or community notices. Each card is clearly marked with a sponsor badge and includes direct WhatsApp/Email contact buttons. We do not process financial transactions directly."
+          },
+          {
+            id: 13,
+            category: "technical",
+            question: "Does Falah Islamic Post track or store my personal data?",
+            answer: "<strong>No.</strong> The portal operates strictly client-side. Your favorites, dark mode preference, notes, and reading history remain entirely on your personal device inside your browser's LocalStorage. We do not collect names, passwords, or browsing data."
+          },
+          {
+            id: 14,
+            category: "technical",
+            question: "Can I use Falah Islamic Post offline as an app (PWA)?",
+            answer: "Yes! Falah Islamic Post is designed as an offline-first Progressive Web App. On Android (Chrome), tap 'Add to Home screen' or 'Install App'. On iPhone (Safari), tap Share and select 'Add to Home Screen'. Once added, previous posts and utility calculations remain accessible offline."
+          },
+          {
+            id: 15,
+            category: "technical",
+            question: "What happens if I clear my browser's cache or cookies?",
+            answer: "Because all your saved favorites (❤️) and custom notes reside strictly in your local device memory, clearing browser storage will reset those local bookmarks. Regular content from the portal will simply re-sync upon your next visit."
+          }
+        ]
+      },
+
+      // ==============================================================
+      // URDU
+      // ==============================================================
+      ur: {
+        heroTitle: "❓ اکثر پوچھے جانے والے سوالات",
+        heroSub: "Falah Islamic Post کے بارے میں عام سوالات کے جوابات حاصل کریں۔ اگر آپ کو کوئی معلومات نہ ملے تو <a href='legal.html#contact'>ہم سے رابطہ کریں</a>۔",
+        searchPlaceholder: "سوالات تلاش کریں...",
+        categories: {
+          all: "📌 تمام",
+          general: "ℹ️ عمومی",
+          feed: "📜 پوسٹس اور فیڈ",
+          prayer: "🕌 نماز اور اوقات",
+          calendar: "📅 ہجری کیلنڈر",
+          tools: "🛠️ ٹولز اور اسٹیٹس",
+          technical: "💻 تکنیکی اور پرائیویسی"
+        },
+        noResults: {
+          title: "کوئی نتیجہ نہیں ملا",
+          sub: "اپنی تلاش کے الفاظ تبدیل کریں یا اوپر کے زمرے براؤز کریں۔"
+        },
+        faqs: [
+          {
+            id: 1,
+            category: "general",
+            question: "Falah Islamic Post کیا ہے؟",
+            answer: "Falah Islamic Post ایک جدید اور موبائل فرینڈلی اسلامی ویب پورٹل ہے جس کا مقصد مستند احادیث، روزمرہ کی دعائیں، سنن و آداب اور دینی پیغامات کو امت تک پہنچانا ہے۔ اس میں نماز کے اوقات، خودکار ہجری کیلنڈر اور واٹس ایپ اسٹیٹس کارڈ بنانے کے ٹولز شامل ہیں۔"
+          },
+          {
+            id: 2,
+            category: "general",
+            question: "کیا Falah Islamic Post مفت ہے؟",
+            answer: "✅ جی ہاں، Falah Islamic Post تمام مسلمانوں کے لیے بلا معاوضہ اور بالکل مفت ہے۔ اس میں کوئی پوشیدہ فیس یا سبسکرپشن نہیں ہے۔"
+          },
+          {
+            id: 3,
+            category: "general",
+            question: "کیا پورٹل استعمال کرنے کے لیے اکاؤنٹ بنانا ضروری ہے؟",
+            answer: "نہیں، کسی رجسٹریشن یا اکاؤنٹ کی ضرورت نہیں ہے۔ آپ ویب سائٹ کھولتے ہی تمام احادیث، دعائیں اور دینی ٹولز فوراً استعمال کر سکتے ہیں۔"
+          },
+          {
+            id: 4,
+            category: "feed",
+            question: "فیڈ میں پوسٹس کس طرح تقسیم کی گئی ہیں؟",
+            answer: "پوسٹس کو مختلف ٹیبز میں منظم کیا گیا ہے: <strong>حدیث</strong>، <strong>دعا</strong>، <strong>روزمرہ</strong>، <strong>مسائل</strong> اور <strong>اقوال</strong>۔ آپ اوپر موجود کسی بھی بٹن کو دبا کر اپنی پسند کا موضوع دیکھ سکتے ہیں۔"
+          },
+          {
+            id: 5,
+            category: "feed",
+            question: "پسندیدہ (❤️) کا بٹن کیسے کام کرتا ہے؟",
+            answer: "کسی بھی پوسٹ پر دل (❤️) کے نشان کو دبانے سے وہ پوسٹ آپ کے اپنے فون کے براؤزر میں محفوظ ہو جاتی ہے۔ بعد میں آپ 'Saved' کے بٹن پر کلک کر کے انٹرنیٹ کے بغیر بھی اپنی محفوظ شدہ پوسٹس پڑھ سکتے ہیں۔"
+          },
+          {
+            id: 6,
+            category: "tools",
+            question: "واٹس ایپ اسٹیٹس امیج کارڈ جنریٹر (🖼️) کیا ہے؟",
+            answer: "ہر پوسٹ کے نیچے ایک فوٹو کا نشان (🖼️) دیا گیا ہے۔ اسے دباتے ہی براؤزر کا جدید کینوس سسٹم اس پوسٹ کو صرف 1 سیکنڈ میں زمردی رنگ کے خوبصورت اسکوائر (1080x1080) پوسٹر میں بدل دیتا ہے، جسے آپ ڈاؤن لوڈ کر کے اپنے واٹس ایپ اسٹیٹس پر لگا سکتے ہیں۔"
+          },
+          {
+            id: 7,
+            category: "feed",
+            question: "جدول (Table) شیئر کرتے وقت ٹیکسٹ میں کیوں بدل جاتا ہے؟",
+            answer: "واٹس ایپ میسج میں کمپیوٹر ٹیبل ٹھیک نہیں دکھتا۔ اس لیے Falah Islamic Post کا اسکرپٹ شیئر اور کاپی کرتے وقت ٹیبل کو خوبصورت بلٹ پوائنٹس اور واضح سرخیوں میں تبدیل کر دیتا ہے تاکہ پڑھنے والے کو آسانی ہو۔"
+          },
+          {
+            id: 8,
+            category: "prayer",
+            question: "نماز کے اوقات کا حساب کیسے لگایا جاتا ہے؟",
+            answer: "نماز کے اوقات فلکیاتی پیمانوں کے مطابق شمار کیے جاتے ہیں۔ چونکہ مختلف علاقوں اور مساجد میں 3 سے 5 منٹ کا فرق ہو سکتا ہے، اس لیے باجماعت نماز اور روزے کے لیے اپنی قریبی مسجد کے اوقات کو ترجیح دیں۔"
+          },
+          {
+            id: 9,
+            category: "calendar",
+            question: "ہجری تاریخ شام کو مغرب کے بعد کیوں تبدیل ہو جاتی ہے؟",
+            answer: "اسلامی شریعت کے مطابق نیا اسلامی قمری دن رات 12 بجے کے بجائے <strong>غروبِ آفتاب (مغرب)</strong> سے شروع ہوتا ہے۔ Falah Islamic Post کا سسٹم اسی شرعی اصول کے تحت سورج ڈوبتے ہی اگلی ہجری تاریخ دکھاتا ہے۔"
+          },
+          {
+            id: 10,
+            category: "calendar",
+            question: "ہجری تاریخ ایڈجسٹمنٹ (Offset) کیا ہے؟",
+            answer: "رویتِ ہلال کے فرق کی وجہ سے برصغیر (ہند، پاک) اور خلیجی ممالک کی ہجری تاریخ میں ایک دن کا فرق ہو سکتا ہے۔ آپ سیٹنگز میں جا کر اپنی مقامی چاند کی تاریخ کے مطابق کیلنڈر سیٹ کر سکتے ہیں۔"
+          },
+          {
+            id: 11,
+            category: "tools",
+            question: "اسلامی کوئز کس طرح کام کرتا ہے؟",
+            answer: "فیڈ میں دینی سوالات پوچھے جاتے ہیں۔ جیسے ہی آپ کسی جواب پر کلک کرتے ہیں، سسٹم فوری طور پر صحیح جواب کو سبز رنگ میں ظاہر کر کے اس کا حوالہ سمجھا دیتا ہے۔"
+          },
+          {
+            id: 12,
+            category: "general",
+            question: "اسپانسر / اعلانات کے کارڈز کیا ہیں؟",
+            answer: "پورٹل کو جاری رکھنے کے لیے منتخب شدہ کاروباری یا رفاہی اعلانات شامل کیے جاتے ہیں۔ ہر اسپانسر کارڈ کے نیچے رابطہ کا واٹس ایپ بٹن موجود ہوتا ہے۔"
+          },
+          {
+            id: 13,
+            category: "technical",
+            question: "کیا Falah Islamic Post صارف کا ذاتی ڈیٹا محفوظ کرتا ہے؟",
+            answer: "<strong>ہرگز نہیں۔</strong> یہ پورٹل کلائنٹ سائیڈ پر چلتا ہے۔ آپ کے نوٹس، پسندیدہ پوسٹس اور ترجیحات صرف آپ کے اپنے موبائل کی میموری (LocalStorage) میں رہتے ہیں اور ہمارے پاس کوئی ڈیٹا منتقل نہیں ہوتا۔"
+          },
+          {
+            id: 14,
+            category: "technical",
+            question: "کیا میں اسے بطور ایپ (PWA) اپنے فون پر انسٹال کر سکتا ہوں؟",
+            answer: "جی ہاں! اینڈرائیڈ پر کروم میں 'Add to Home screen' اور آئی فون پر سفاری کے شیئر بٹن سے 'Add to Home Screen' منتخب کریں۔ یہ بالکل عام موبائل ایپ کی طرح کام کرے گی۔"
+          },
+          {
+            id: 15,
+            category: "technical",
+            question: "اگر موبائل کا براؤزر ڈیٹا صاف کر دیں تو کیا ہوگا؟",
+            answer: "کیونکہ تمام پسندیدہ (❤️) پوسٹس آپ کے فون کے براؤزر میں محفوظ ہوتی ہیں، اس لیے کیش یا اسٹوریج صاف کرنے پر وہ محفوظ نشانات ہٹ جائیں گے۔ بنیادی فیڈ دوبارہ لوڈ کرنے پر بحال ہو جائے گی۔"
+          }
+        ]
+      },
+
+      // ==============================================================
+      // HINDI
+      // ==============================================================
+      hi: {
+        heroTitle: "❓ अक्सर पूछे जाने वाले प्रश्न",
+        heroSub: "Falah Islamic Post के बारे में सामान्य प्रश्नों के उत्तर प्राप्त करें। यदि आपको अपनी जानकारी न मिले, तो <a href='legal.html#contact'>हमसे संपर्क करें</a>।",
+        searchPlaceholder: "प्रश्न खोजें...",
+        categories: {
+          all: "📌 सभी",
+          general: "ℹ️ सामान्य",
+          feed: "📜 पोस्ट व फ़ीड",
+          prayer: "🕌 नमाज़ व समय",
+          calendar: "📅 हिजरी कैलेंडर",
+          tools: "🛠️ टूल्स व स्टेटस",
+          technical: "💻 तकनीकी व गोपनीयता"
+        },
+        noResults: {
+          title: "कोई परिणाम नहीं मिला",
+          sub: "अपने खोज शब्दों को समायोजित करें या ऊपर दी गई श्रेणियों को ब्राउज़ करें।"
+        },
+        faqs: [
+          {
+            id: 1,
+            category: "general",
+            question: "Falah Islamic Post क्या है?",
+            answer: "Falah Islamic Post एक आधुनिक, मोबाइल-अनुकूल इस्लामिक वेब पोर्टल है जो प्रामाणिक हदीस, दैनिक दुआएं, सुन्नत के तरीके और इस्लामी शिक्षाओं को साझा करता है। इसमें नमाज़ का समय, हिजरी कैलेंडर और व्हाट्सएप स्टेटस कार्ड बनाने के टूल्स शामिल हैं।"
+          },
+          {
+            id: 2,
+            category: "general",
+            question: "क्या Falah Islamic Post उपयोग के लिए निःशुल्क है?",
+            answer: "✅ हाँ, Falah Islamic Post पूरी तरह से मुफ़्त है। इसमें कोई छुपा हुआ शुल्क, सदस्यता या पंजीकरण की आवश्यकता नहीं है।"
+          },
+          {
+            id: 3,
+            category: "general",
+            question: "क्या मुझे कोई खाता या आईडी बनाने की आवश्यकता है?",
+            answer: "नहीं, आपको किसी खाते की आवश्यकता नहीं है। पोर्टल खोलते ही आप सभी पोस्ट, टूल्स और इस्लामिक सामग्री का तुरंत लाभ उठा सकते हैं।"
+          },
+          {
+            id: 4,
+            category: "feed",
+            question: "फ़ीड में सामग्री को कैसे वर्गीकृत किया गया है?",
+            answer: "पोस्ट्स को अलग-अलग श्रेणियों में बांटा गया है: <strong>हदीस</strong>, <strong>दुआ</strong>, <strong>रोज़मर्रा</strong> (दैनिक शिष्टाचार), <strong>मसाइल</strong> और <strong>अक़वाल</strong>। आप शीर्ष पर दिए गए किसी भी बटन पर क्लिक करके विषयवार पोस्ट देख सकते हैं।"
+          },
+          {
+            id: 5,
+            category: "feed",
+            question: "पसंदीदा (❤️) बटन कैसे काम करता है?",
+            answer: "किसी भी पोस्ट पर दिल (❤️) के निशान पर क्लिक करने से वह पोस्ट आपके मोबाइल ब्राउज़र के लोकल स्टोरेज में सहेज ली जाती है। आप बिना इंटरनेट के भी 'Saved' टैब में जाकर अपनी पसंदीदा पोस्ट पढ़ सकते हैं।"
+          },
+          {
+            id: 6,
+            category: "tools",
+            question: "व्हाट्सएप स्टेटस इमेज कार्ड जनरेटर (🖼️) क्या है?",
+            answer: "प्रत्येक पोस्ट के नीचे एक इमेज आइकन (🖼️) दिया गया है। इस पर टैप करते ही ब्राउज़र का इन-बिल्ट कैनवास सिस्टम बिना किसी बाहरी सर्वर के केवल 1 सेकंड में उस पोस्ट का 1080x1080 आकार का सुंदर स्टेटस कार्ड तैयार कर देता है जिसे आप डाउनलोड करके व्हाट्सएप स्टेटस पर लगा सकते हैं।"
+          },
+          {
+            id: 7,
+            category: "feed",
+            question: "तालिका (Table) व्हाट्सएप पर शेयर करते समय क्यों बदल जाती है?",
+            answer: "वेबसाइट की टेबल व्हाट्सएप मैसेज में ठीक नहीं दिखती। इसलिए Falah Islamic Post कॉपी या शेयर करते समय टेबल को सुंदर बुलेट पॉइंट्स और बोल्ड शीर्षकों में बदल देता है ताकि पढ़ने वाले को आसानी हो।"
+          },
+          {
+            id: 8,
+            category: "prayer",
+            question: "नमाज़ के समय की गणना कैसे की जाती है?",
+            answer: "नमाज़ के समय की गणना मानक खगोलीय सिद्धांतों पर आधारित है। स्थानीय भौगोलिक स्थिति और मस्जिदों के समय में 3 से 5 मिनट का अंतर संभव है, इसलिए जमात की नमाज़ के लिए अपनी स्थानीय मस्जिद के समय को प्राथमिकता दें।"
+          },
+          {
+            id: 9,
+            category: "calendar",
+            question: "हिजरी तारीख शाम को सूर्यास्त (मग़रिब) के बाद क्यों बदलती है?",
+            answer: "इस्लामी नियमों के अनुसार नया चंद्र दिवस मध्यरात्रि 12:00 बजे के बजाय <strong>सूर्यास्त (मग़रिब)</strong> से शुरू होता है। Falah Islamic Post इसी नियम का पालन करता है और सूर्यास्त होते ही अगली हिजरी तारीख दिखाता है।"
+          },
+          {
+            id: 10,
+            category: "calendar",
+            question: "हिजरी तारीख ऑफसेट क्या है?",
+            answer: "चांद दिखने के अंतर के कारण अलग-अलग देशों में हिजरी तारीख में 1 दिन का अंतर हो सकता है। आप सेटिंग्स ड्रॉअर में जाकर अपनी स्थानीय तारीख के अनुसार ऑफसेट सेट कर सकते हैं।"
+          },
+          {
+            id: 11,
+            category: "tools",
+            question: "इंटरैक्टिव इस्लामिक क्विज़ कैसे काम करता है?",
+            answer: "फ़ीड में ज्ञानवर्धक सवाल पूछे जाते हैं। विकल्प चुनते ही सही उत्तर तुरंत हरे रंग में हाइलाइट हो जाता है और संदर्भ भी दिखाई देता है।"
+          },
+          {
+            id: 12,
+            category: "general",
+            question: "प्रायोजक / विज्ञापन कार्ड क्या हैं?",
+            answer: "पोर्टल के संचालन को जारी रखने के लिए विश्वसनीय स्थानीय या सामुदायिक प्रचार कार्ड प्रदर्शित किए जा सकते हैं। इनमें सीधे व्हाट्सएप या ईमेल से संपर्क का विकल्प दिया जाता है।"
+          },
+          {
+            id: 13,
+            category: "technical",
+            question: "क्या Falah Islamic Post मेरा व्यक्तिगत डेटा सुरक्षित रखता है?",
+            answer: "<strong>हाँ।</strong> पोर्टल पूरी तरह से क्लाइंट-साइड काम करता है। आपका डेटा, पसंदीदा पोस्ट और नोट्स केवल आपके अपने डिवाइस के ब्राउज़र में रहते हैं। हम कोई व्यक्तिगत डेटा सर्वर पर एकत्र नहीं करते।"
+          },
+          {
+            id: 14,
+            category: "technical",
+            question: "क्या मैं इसे ऐप (PWA) की तरह इंस्टॉल कर सकता हूँ?",
+            answer: "हाँ! एंड्रॉइड पर क्रोम मेनू में जाकर 'Add to Home screen' और आईफोन पर सफारी शेयर मेनू से 'Add to Home Screen' चुनें। यह बिना ऐप स्टोर के सीधी ऐप की तरह चलेगी।"
+          },
+          {
+            id: 15,
+            category: "technical",
+            question: "ब्राउज़र डेटा साफ़ करने पर क्या होगा?",
+            answer: "क्योंकि सहेजी गई पसंदीदा पोस्ट्स केवल आपके स्थानीय ब्राउज़र मेमोरी में रहती हैं, ब्राउज़र डेटा क्लियर करने पर वे रीसेट हो जाएंगी।"
+          }
+        ]
+      },
+
+      // ==============================================================
+      // HINGLISH
+      // ==============================================================
+      hinglish: {
+        heroTitle: "❓ Aksar Poochhe Jaane Wale Sawaal",
+        heroSub: "Falah Islamic Post ke baare mein aam sawaalon ke jawab khojein. Agar aapko apni manchahi cheez na mile toh <a href='legal.html#contact'>humse contact karein</a>.",
+        searchPlaceholder: "Sawaal khojein...",
+        categories: {
+          all: "📌 Sabhi",
+          general: "ℹ️ Aam",
+          feed: "📜 Posts & Feed",
+          prayer: "🕌 Namaz & Waqt",
+          calendar: "📅 Hijri Calendar",
+          tools: "🛠️ Tools & Status",
+          technical: "💻 Technical & Privacy"
+        },
+        noResults: {
+          title: "Koi result nahi mila",
+          sub: "Apne search words adjust karein ya upar di gayi categories browse karein."
+        },
+        faqs: [
+          {
+            id: 1,
+            category: "general",
+            question: "Falah Islamic Post kya hai?",
+            answer: "Falah Islamic Post ek modern, mobile-friendly Islamic web portal hai jo authentic Hadees, daily Duas, Sunnah tareeqe aur deeni paigamat ko aam karne ke liye banaya gaya hai. Isme namaz ke auqaat, Hijri calendar aur WhatsApp status image maker jaise mufeed tools maujood hain."
+          },
+          {
+            id: 2,
+            category: "general",
+            question: "Kya Falah Islamic Post use karna free hai?",
+            answer: "✅ Haan, Falah Islamic Post poori Ummah ke liye 100% bilkul free hai. Isme koi registration fee, subscription ya hidden charges nahi hain."
+          },
+          {
+            id: 3,
+            category: "general",
+            question: "Kya mujhe account ya login banane ki zaroorat hai?",
+            answer: "Nahi, kisi tarah ke login ya account ki zaroorat nahi hai. Aap website open karte hi direct tamaam deeni posts, hadees aur tools use kar sakte hain."
+          },
+          {
+            id: 4,
+            category: "feed",
+            question: "Feed me posts ki category kaise baanti gayi hai?",
+            answer: "Posts ko asaan tabs me categorize kiya gaya hai: <strong>Hadees</strong>, <strong>Dua</strong>, <strong>Roze Marra</strong>, <strong>Masail</strong> aur <strong>Aqwal</strong>. Aap page ke upar kisi bhi category pill par click karke wahi post filter kar sakte hain."
+          },
+          {
+            id: 5,
+            category: "feed",
+            question: "Favorite / Save (❤️) button kaise kaam karta hai?",
+            answer: "Kisi bhi post ke neeche dil (❤️) par tap karte hi wo post aapke mobile browser ki memory (LocalStorage) me save ho jati hai. Aap offline reh kar bhi 'Saved' tab me jakar apni manpasand posts padh sakte hain."
+          },
+          {
+            id: 6,
+            category: "tools",
+            question: "WhatsApp Status Image Card Generator (🖼️) kya hai?",
+            answer: "Har post ke footer me image icon (🖼️) diya gaya hai. Us par click karte hi browser ka Canvas engine bina kisi server ke sirf 1 second me us post ko ek khoobsurat 1080x1080 square poster me convert kar deta hai, jise aap direct apne WhatsApp status par laga sakte hain."
+          },
+          {
+            id: 7,
+            category: "feed",
+            question: "Table WhatsApp par share karte waqt badal kyun jata hai?",
+            answer: "Computer table WhatsApp chat me theek nahi dikhta. Isliye Falah Islamic Post ka script copy ya share karte waqt us table ko neat bullet points aur bold headings me badal deta hai taaki paigam saaf padha ja sake."
+          },
+          {
+            id: 8,
+            category: "prayer",
+            question: "Namaz ke auqaat kaise calculate hote hain?",
+            answer: "Namaz ke waqt astronomical calculation ke mutabiq nikaale jaate hain. Local masjid ke waqt me 3 se 5 minute ka farq ho sakta hai, isliye jama'at ki namaz ke liye apni qareebi masjid ke time table ko follow karein."
+          },
+          {
+            id: 9,
+            category: "calendar",
+            question: "Hijri date shaam ko Sunset (Maghrib) ke baad kyun badal jaati hai?",
+            answer: "Islamic Shariah ke mutabiq naya qamri din raat 12 baje ke bajaye <strong>Maghrib (suraj doobne)</strong> se shuru hota hai. Falah Islamic Post isi shar'i usool ke teht sunset hote hi agle din ki Hijri date dikhane lagta hai."
+          },
+          {
+            id: 10,
+            category: "calendar",
+            question: "Hijri date offset kya hota hai?",
+            answer: "Chand dekhne ke farq ki wajah se alag-alag mulkon (jaise Gulf aur India/Pakistan) ki tareekh me 1 din ka farq hota hai. Aap settings me jakar apne ilaqa ke mutabiq -1 ya 0 day offset set kar sakte hain."
+          },
+          {
+            id: 11,
+            category: "tools",
+            question: "Islamic Quiz kaise kaam karta hai?",
+            answer: "Feed me deeni sawalat ke cards aate hain. Option chunne par sahi jawab foran green ho jata hai aur sawal ka shar'i hawala bhi samne aa jata hai."
+          },
+          {
+            id: 12,
+            category: "general",
+            question: "Sponsor / Ad cards kya hote hain?",
+            answer: "Platform ki khidmat ko jari rakhne ke liye verified business ya community notices lagaye ja sakte hain. Har sponsor card par direct WhatsApp aur rabta ka button hota hai."
+          },
+          {
+            id: 13,
+            category: "technical",
+            question: "Kya Falah Islamic Post mera personal data collect karta hai?",
+            answer: "<strong>Nahi.</strong> Yeh website 100% client-side privacy-focused hai. Aapke bookmarks, notes aur settings aapke phone ke browser me rehti hain. Hamare server par koi personal data save nahi hota."
+          },
+          {
+            id: 14,
+            category: "technical",
+            question: "Kya ise mobile app (PWA) ki tarah install kar sakte hain?",
+            answer: "Haan! Android par Chrome ke menu se 'Add to Home screen' aur iPhone par Safari ke Share menu se 'Add to Home Screen' select karein. Yeh bina Play Store ke native app ki tarah open hogi."
+          },
+          {
+            id: 15,
+            category: "technical",
+            question: "Agar phone ka browser data clear kardein toh kya hoga?",
+            answer: "Kyunki aapke favorite (❤️) posts phone ki memory me hote hain, browser cache clear karne par wo saved list reset ho jayegi. Asal posts website dubara kholne par wapas aa jayengi."
+          }
+        ]
+      }
+    };
+
+    let currentLanguage = 'en';
+    let currentCategory = 'all';
+    let searchQuery = '';
+
+    function renderFaq(lang, category = 'all', search = '') {
+      const data = faqContent[lang];
+      if (!data) return;
+
+      const container = document.getElementById('faqList');
+      const noResults = document.getElementById('noResults');
+      
+      let filteredFaqs = data.faqs;
+      
+      if (category !== 'all') {
+        filteredFaqs = filteredFaqs.filter(faq => faq.category === category);
+      }
+      
+      if (search.trim() !== '') {
+        const query = search.toLowerCase().trim();
+        filteredFaqs = filteredFaqs.filter(faq => 
+          faq.question.toLowerCase().includes(query) || 
+          faq.answer.toLowerCase().includes(query)
+        );
+      }
+
+      if (filteredFaqs.length === 0) {
+        container.innerHTML = '';
+        noResults.classList.add('visible');
+        return;
+      }
+      noResults.classList.remove('visible');
+
+      let html = '';
+      filteredFaqs.forEach((faq, index) => {
+        const total = filteredFaqs.length;
+        html += `
+          <div class="faq-item" data-id="${faq.id}" data-category="${faq.category}">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span class="q-number">${index + 1}/${total}</span>
+              <span class="q-text">${faq.question}</span>
+              <span class="toggle-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>${faq.answer}</p>
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+    }
+
+    function toggleFaq(element) {
+      const answer = element.nextElementSibling;
+      const isOpen = answer.classList.contains('open');
+      
+      document.querySelectorAll('.faq-answer.open').forEach(el => {
+        if (el !== answer) {
+          el.classList.remove('open');
+          el.previousElementSibling.classList.remove('open');
+        }
+      });
+      
+      answer.classList.toggle('open');
+      element.classList.toggle('open');
+    }
+
+    function searchFaq() {
+      const input = document.getElementById('faqSearchInput');
+      const clearBtn = document.getElementById('clearSearch');
+      searchQuery = input.value;
+      
+      if (searchQuery.length > 0) {
+        clearBtn.classList.add('visible');
+      } else {
+        clearBtn.classList.remove('visible');
+      }
+      
+      renderFaq(currentLanguage, currentCategory, searchQuery);
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('faqSearchInput');
+      input.value = '';
+      searchQuery = '';
+      document.getElementById('clearSearch').classList.remove('visible');
+      renderFaq(currentLanguage, currentCategory, '');
+    }
+
+    function filterCategory(category, btn) {
+      currentCategory = category;
+      
+      document.querySelectorAll('.faq-cat-btn').forEach(b => {
+        b.classList.toggle('active', b === btn);
+      });
+      
+      document.getElementById('faqSearchInput').value = '';
+      searchQuery = '';
+      document.getElementById('clearSearch').classList.remove('visible');
+      
+      renderFaq(currentLanguage, category, '');
+    }
+
+    function switchLanguage(lang) {
+      currentLanguage = lang;
+      
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      
+      const data = faqContent[lang];
+      document.getElementById('heroTitle').textContent = data.heroTitle;
+      document.getElementById('heroSub').innerHTML = data.heroSub;
+      document.getElementById('faqSearchInput').placeholder = data.searchPlaceholder;
+      
+      document.querySelectorAll('.faq-cat-btn').forEach(btn => {
+        const catKey = btn.dataset.cat;
+        btn.textContent = data.categories[catKey] || catKey;
+      });
+      
+      document.querySelector('#noResults h3').textContent = data.noResults.title;
+      document.querySelector('#noResults p').textContent = data.noResults.sub;
+      
+      renderFaq(lang, currentCategory, searchQuery);
+      localStorage.setItem('falah_faq_lang', lang);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedLang = localStorage.getItem('falah_faq_lang') || 'en';
+      currentLanguage = savedLang;
+      
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === savedLang);
+      });
+      
+      const data = faqContent[savedLang];
+      document.getElementById('heroTitle').textContent = data.heroTitle;
+      document.getElementById('heroSub').innerHTML = data.heroSub;
+      document.getElementById('faqSearchInput').placeholder = data.searchPlaceholder;
+      
+      document.querySelectorAll('.faq-cat-btn').forEach(btn => {
+        const catKey = btn.dataset.cat;
+        btn.textContent = data.categories[catKey] || catKey;
+      });
+      
+      document.querySelector('#noResults h3').textContent = data.noResults.title;
+      document.querySelector('#noResults p').textContent = data.noResults.sub;
+      
+      renderFaq(savedLang, 'all', '');
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        clearSearch();
+        document.getElementById('faqSearchInput').blur();
+      }
+      if (e.key === 'Enter' && document.activeElement === document.getElementById('faqSearchInput')) {
+        searchFaq();
+      }
+    });
+  </script>
+</body>
+</html>
